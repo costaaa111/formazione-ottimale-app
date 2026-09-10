@@ -6,7 +6,7 @@
 // Actions). Nessuna logica di dominio qui dentro: solo caching e
 // visualizzazione della notifica ricevuta.
 
-const CACHE_VERSION = 'fo-v1';
+const CACHE_VERSION = 'fo-v2';
 const APP_SHELL = ['./', './index.html', './style.css', './app.js', './manifest.json'];
 const DATA_PATHS = ['/rosa.json', '/formazione.json'];
 
