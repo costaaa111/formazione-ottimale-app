@@ -1,0 +1,156 @@
+{
+  "giocatori": [
+    {
+      "nome": "Bowie",
+      "ruolo": "A",
+      "squadra": "Sassuolo",
+      "fantamedia": 6.47
+    },
+    {
+      "nome": "Krstovic",
+      "ruolo": "A",
+      "squadra": "Atalanta",
+      "fantamedia": 6.98
+    },
+    {
+      "nome": "Romero D.",
+      "ruolo": "A",
+      "squadra": "Parma",
+      "fantamedia": 6.0
+    },
+    {
+      "nome": "Scamacca",
+      "ruolo": "A",
+      "squadra": "Atalanta",
+      "fantamedia": 6.86
+    },
+    {
+      "nome": "Thuram",
+      "ruolo": "A",
+      "squadra": "Inter",
+      "fantamedia": 7.87
+    },
+    {
+      "nome": "Yeboah J.",
+      "ruolo": "A",
+      "squadra": "Venezia",
+      "fantamedia": 7.5
+    },
+    {
+      "nome": "Bernardeschi",
+      "ruolo": "C",
+      "squadra": "Bologna",
+      "fantamedia": 6.47
+    },
+    {
+      "nome": "McKennie",
+      "ruolo": "C",
+      "squadra": "Juventus",
+      "fantamedia": 6.41
+    },
+    {
+      "nome": "McTominay",
+      "ruolo": "C",
+      "squadra": "Napoli",
+      "fantamedia": 6.65
+    },
+    {
+      "nome": "Rodriguez Je.",
+      "ruolo": "C",
+      "squadra": "Como",
+      "fantamedia": 6.2
+    },
+    {
+      "nome": "Sucic P.",
+      "ruolo": "C",
+      "squadra": "Inter",
+      "fantamedia": 6.23
+    },
+    {
+      "nome": "Taylor K.",
+      "ruolo": "C",
+      "squadra": "Lazio",
+      "fantamedia": 6.34
+    },
+    {
+      "nome": "Thorstvedt",
+      "ruolo": "C",
+      "squadra": "Sassuolo",
+      "fantamedia": 6.29
+    },
+    {
+      "nome": "Zielinski",
+      "ruolo": "C",
+      "squadra": "Inter",
+      "fantamedia": 7.15
+    },
+    {
+      "nome": "De Winter",
+      "ruolo": "D",
+      "squadra": "Milan",
+      "fantamedia": 6.14
+    },
+    {
+      "nome": "Dimarco",
+      "ruolo": "D",
+      "squadra": "Inter",
+      "fantamedia": 7.25
+    },
+    {
+      "nome": "Kelly L.",
+      "ruolo": "D",
+      "squadra": "Juventus",
+      "fantamedia": 5.94
+    },
+    {
+      "nome": "Monterisi",
+      "ruolo": "D",
+      "squadra": "Frosinone",
+      "fantamedia": 6.0
+    },
+    {
+      "nome": "Pavlovic",
+      "ruolo": "D",
+      "squadra": "Milan",
+      "fantamedia": 6.37
+    },
+    {
+      "nome": "Spence",
+      "ruolo": "D",
+      "squadra": "Inter",
+      "fantamedia": 6.54
+    },
+    {
+      "nome": "Spinazzola",
+      "ruolo": "D",
+      "squadra": "Napoli",
+      "fantamedia": 6.2
+    },
+    {
+      "nome": "Valdepenas",
+      "ruolo": "D",
+      "squadra": "Fiorentina",
+      "fantamedia": 5.0
+    },
+    {
+      "nome": "Falcone",
+      "ruolo": "P",
+      "squadra": "Lecce",
+      "fantamedia": 4.93
+    },
+    {
+      "nome": "Grabara",
+      "ruolo": "P",
+      "squadra": "Juventus",
+      "fantamedia": 5.22
+    },
+    {
+      "nome": "Vicario",
+      "ruolo": "P",
+      "squadra": "Juventus",
+      "fantamedia": 5.83
+    }
+  ],
+  "stagione": "2026/27",
+  "generato_il": "2026-09-10T01:58:27+02:00"
+}

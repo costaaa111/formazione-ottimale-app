@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Formazione">
+<title>Formazione Ottimale</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-logo">FO</div>
+    <div>
+      <div class="brand-title">Formazione Ottimale</div>
+      <div class="brand-sub" id="brand-sub">Serie A</div>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button class="tab" id="tab-rosa" role="tab" aria-selected="true" data-screen="rosa">La rosa</button>
+    <button class="tab" id="tab-formazione" role="tab" aria-selected="false" data-screen="formazione">La formazione</button>
+  </nav>
+  <button class="bell-btn" id="btn-notifiche" aria-label="Notifiche push" title="Notifiche">🔔</button>
+</header>
+
+<main class="page">
+
+  <div class="card notifiche-panel" id="notifiche-panel" hidden>
+    <div class="card-title small">Notifiche push</div>
+    <p class="card-meta">Un avviso 6 ore e uno 1 ora prima della deadline. Su iPhone funziona solo se la PWA è già installata su schermata Home (Condividi → Aggiungi a Home) — Safari da solo non basta.</p>
+    <p class="card-meta" id="notifiche-stato">Caricamento…</p>
+    <button class="btn-primary" id="btn-attiva-notifiche" hidden>Attiva notifiche</button>
+    <div id="notifiche-sub-box" hidden>
+      <p class="card-meta">Incolla questo valore come GitHub Secret <code>PUSH_SUBSCRIPTION</code> (Settings → Secrets and variables → Actions del repository):</p>
+      <textarea id="notifiche-sub-text" readonly rows="6"></textarea>
+      <button class="btn-secondary" id="btn-copia-sub">Copia</button>
+    </div>
+  </div>
+
+  <section id="screen-rosa" class="screen" data-screen="rosa">
+    <div class="card">
+      <div class="card-title">Chi hai in rosa</div>
+      <div class="card-meta" id="rosa-meta">Caricamento…</div>
+      <div class="gruppi" id="rosa-gruppi"></div>
+    </div>
+  </section>
+
+  <section id="screen-formazione" class="screen" data-screen="formazione" hidden>
+    <div class="formazione-layout">
+
+      <div class="card field-card">
+        <div class="field-header">
+          <div class="card-title">Schierala così</div>
+          <div class="badge-verdetto" id="verdetto"></div>
+        </div>
+        <div class="field" id="field"></div>
+      </div>
+
+      <div class="side-col">
+        <div class="card-dark">
+          <div class="dark-label">Modulo</div>
+          <div class="dark-modulo" id="modulo">—</div>
+          <div class="dark-stats">
+            <div class="dark-stat">
+              <div class="dark-stat-label">Punteggio atteso</div>
+              <div class="dark-stat-value" id="punteggio-atteso">—</div>
+            </div>
+            <div class="dark-stat">
+              <div class="dark-stat-label">Giornata</div>
+              <div class="dark-stat-value" id="giornata-valore">—</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title small">Panchina, in ordine</div>
+          <div class="panchina" id="panchina"></div>
+        </div>
+
+        <div class="card" id="esclusi-card" hidden>
+          <div class="card-title small">Fuori, e il motivo</div>
+          <div class="esclusi" id="esclusi"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="empty-state" id="empty-state" hidden>
+    <p>Nessun dato disponibile ancora.</p>
+    <p class="empty-sub">Esegui <code>esporta_dati_app.py</code> e ripubblica il sito.</p>
+  </div>
+
+</main>
+
+<script src="./push-config.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
