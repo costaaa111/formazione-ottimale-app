@@ -1,7 +1,7 @@
 {
   "stagione": "2026/27",
   "giornata": 4,
-  "generato_il": "2026-09-10T13:52:15+02:00",
+  "generato_il": "2026-09-11T00:32:17+02:00",
   "coincidono": true,
   "migliore_assoluto": {
     "modulo": "4-3-3",
@@ -283,19 +283,19 @@
     "esclusi": [
       {
         "nome": "Dimarco",
-        "motivo": "Titolarità al 15%: parte spesso dalla panchina."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Zielinski",
-        "motivo": "Titolarità al 40%: parte spesso dalla panchina."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
       },
       {
         "nome": "Krstovic",
-        "motivo": "Titolarità al 40%: parte spesso dalla panchina."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
       },
       {
         "nome": "Scamacca",
-        "motivo": "Sfida ostica contro Cagliari."
+        "motivo": "Cagliari ha concesso poco a chi gioca nel suo ruolo nelle ultime partite."
       }
     ]
   },
