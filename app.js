@@ -131,67 +131,125 @@ function playerCardCampo(p) {
   return el('div', 'field-player', children);
 }
 
-function renderFormazione(data) {
-  const fieldEl = document.getElementById('field');
-  const panchinaEl = document.getElementById('panchina');
-  const escludiCard = document.getElementById('esclusi-card');
-  const escludiEl = document.getElementById('esclusi');
-  fieldEl.innerHTML = '';
-  panchinaEl.innerHTML = '';
-  escludiEl.innerHTML = '';
-
-  if (!data || !Array.isArray(data.reparti) || data.reparti.length === 0) {
-    document.getElementById('modulo').textContent = '—';
-    document.getElementById('punteggio-atteso').textContent = '—';
-    document.getElementById('giornata-valore').textContent = '—';
-    document.getElementById('verdetto').textContent = '';
-    fieldEl.appendChild(textEl('div', 'card-meta', 'Formazione non ancora calcolata per questa giornata.'));
-    escludiCard.hidden = true;
-    return;
-  }
-
-  document.getElementById('modulo').textContent = data.modulo || '—';
-  document.getElementById('punteggio-atteso').textContent = data.punteggio_atteso != null ? n1(data.punteggio_atteso) : '—';
-  document.getElementById('giornata-valore').textContent = data.giornata != null ? data.giornata : '—';
-  document.getElementById('verdetto').textContent = 'formazione pronta';
-
+// Costruisce un blocco "formazione-layout" completo (campo + colonna
+// laterale con modulo/punteggio atteso/panchina/esclusi) per UNA vista
+// (una delle due chiavi migliore_assoluto/quattro_tre_tre di formazione.json,
+// vedi esporta_dati_app.py). Usata sia per il caso "una sola formazione"
+// che per il confronto affiancato, cosi' la card non e' duplicata nel codice.
+function renderBloccoFormazione(vista, { titolo, badge, giornata } = {}) {
   const repartiByRole = {};
-  for (const rep of data.reparti) repartiByRole[rep.ruolo] = rep.titolari || [];
+  for (const rep of vista.reparti || []) repartiByRole[rep.ruolo] = rep.titolari || [];
 
+  const fieldEl = el('div', 'field', []);
   for (const ruolo of ROLE_ORDER_CAMPO) {
     const titolari = repartiByRole[ruolo] || [];
     if (titolari.length === 0) continue;
-    const riga = el('div', 'reparto', titolari.map(playerCardCampo));
-    fieldEl.appendChild(riga);
+    fieldEl.appendChild(el('div', 'reparto', titolari.map(playerCardCampo)));
   }
 
-  const panchina = Array.isArray(data.panchina) ? data.panchina : [];
+  const fieldCard = el('div', 'card field-card', [
+    el('div', 'field-header', [
+      textEl('div', 'card-title', 'Schierala così'),
+      textEl('div', 'badge-verdetto', 'formazione pronta'),
+    ]),
+    fieldEl,
+  ]);
+
+  const panchinaEl = el('div', 'panchina', []);
+  const panchina = Array.isArray(vista.panchina) ? vista.panchina : [];
   panchina.forEach((p, i) => {
     const sotto = [ROLE_META[p.ruolo] ? ROLE_META[p.ruolo].singolare : p.ruolo,
                    p.fantamedia != null ? `fm ${n1(p.fantamedia)}` : null].filter(Boolean).join(' · ');
-    const row = el('div', 'panchina-row', [
+    panchinaEl.appendChild(el('div', 'panchina-row', [
       textEl('span', 'panchina-n', String(i + 1)),
       textEl('span', 'panchina-nome', p.nome),
       textEl('span', 'panchina-sotto', sotto),
-    ]);
-    panchinaEl.appendChild(row);
+    ]));
   });
 
-  const esclusi = Array.isArray(data.esclusi) ? data.esclusi : [];
-  if (esclusi.length === 0) {
-    escludiCard.hidden = true;
-  } else {
-    escludiCard.hidden = false;
-    for (const p of esclusi) {
-      const row = el('div', 'escluso-row', [
-        textEl('span', 'avatar avatar-30', iniz(p.nome)),
-        el('div', null, [
-          textEl('div', 'escluso-nome', p.nome),
-          textEl('div', 'escluso-motivo', p.motivo || ''),
+  const esclusi = Array.isArray(vista.esclusi) ? vista.esclusi : [];
+  const esclusiCard = esclusi.length === 0 ? null : el('div', 'card', [
+    textEl('div', 'card-title small', 'Fuori, e il motivo'),
+    el('div', 'esclusi', esclusi.map(p => el('div', 'escluso-row', [
+      textEl('span', 'avatar avatar-30', iniz(p.nome)),
+      el('div', null, [
+        textEl('div', 'escluso-nome', p.nome),
+        textEl('div', 'escluso-motivo', p.motivo || ''),
+      ]),
+    ]))),
+  ]);
+
+  const sideCol = el('div', 'side-col', [
+    el('div', 'card-dark', [
+      textEl('div', 'dark-label', 'Modulo'),
+      textEl('div', 'dark-modulo', vista.modulo || '—'),
+      el('div', 'dark-stats', [
+        el('div', 'dark-stat', [
+          textEl('div', 'dark-stat-label', 'Punteggio atteso'),
+          textEl('div', 'dark-stat-value', vista.punteggio_atteso != null ? n1(vista.punteggio_atteso) : '—'),
         ]),
-      ]);
-      escludiEl.appendChild(row);
-    }
+        el('div', 'dark-stat', [
+          textEl('div', 'dark-stat-label', 'Giornata'),
+          textEl('div', 'dark-stat-value', giornata != null ? String(giornata) : '—'),
+        ]),
+      ]),
+    ]),
+    el('div', 'card', [
+      textEl('div', 'card-title small', 'Panchina, in ordine'),
+      panchinaEl,
+    ]),
+    esclusiCard,
+  ]);
+
+  const blocco = el('div', 'formazione-blocco', []);
+  if (titolo) {
+    blocco.appendChild(el('div', 'formazione-blocco-titolo', [
+      textEl('span', null, titolo),
+      badge ? textEl('span', 'formazione-blocco-badge', badge) : null,
+    ]));
+  }
+  blocco.appendChild(el('div', 'formazione-layout', [fieldCard, sideCol]));
+  return blocco;
+}
+
+function renderFormazione(data) {
+  const root = document.getElementById('formazione-root');
+  root.innerHTML = '';
+
+  const principale = data && data.migliore_assoluto;
+  if (!principale) {
+    root.appendChild(el('div', 'card field-card', [
+      textEl('div', 'card-title', 'Schierala così'),
+      textEl('div', 'card-meta', 'Formazione non ancora calcolata per questa giornata.'),
+    ]));
+    return;
+  }
+
+  const giornata = data.giornata;
+
+  if (data.coincidono) {
+    root.appendChild(renderBloccoFormazione(principale, {
+      titolo: 'Il 4-3-3 è già la scelta migliore',
+      giornata,
+    }));
+    return;
+  }
+
+  if (data.quattro_tre_tre) {
+    const diff = data.differenza_punteggio_atteso;
+    root.appendChild(el('div', 'card confronto-banner', [
+      textEl('div', 'card-title small', `Il modulo migliore è il ${principale.modulo}`),
+      textEl('div', 'card-meta', diff != null
+        ? `Batte il 4-3-3 di ${n1(Math.abs(diff))} punti attesi.`
+        : 'Confronto con il 4-3-3 classico.'),
+    ]));
+    root.appendChild(renderBloccoFormazione(principale, { titolo: 'Modulo migliore', badge: principale.modulo, giornata }));
+    root.appendChild(renderBloccoFormazione(data.quattro_tre_tre, { titolo: '4-3-3 classico', giornata }));
+  } else {
+    root.appendChild(renderBloccoFormazione(principale, { titolo: 'Modulo migliore', badge: principale.modulo, giornata }));
+    root.appendChild(el('div', 'card confronto-banner', [
+      textEl('div', 'card-meta', data.quattro_tre_tre_motivo || 'Il modulo 4-3-3 non è calcolabile con la rosa attuale.'),
+    ]));
   }
 }
 
