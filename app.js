@@ -1,8 +1,9 @@
 "use strict";
 
-// PWA di sola lettura: legge rosa.json e formazione.json (generati da
-// esporta_dati_app.py) e li rende con lo stesso stile del mockup di design.
-// Nessuna logica di scoring qui dentro: solo formattazione di dati gia' calcolati.
+// PWA di sola lettura: legge rosa.json, formazione.json e accuratezza.json
+// (generati da esporta_dati_app.py nel repo privato) e li rende con lo
+// stesso stile del mockup di design. Nessuna logica di scoring/calcolo qui
+// dentro: solo formattazione di dati gia' calcolati.
 
 const ROLE_META = {
   P: { label: 'Portieri', singolare: 'Portiere', max: 3 },
@@ -32,6 +33,44 @@ function n1(x) {
 function pct(x) {
   if (x === null || x === undefined || Number.isNaN(x)) return null;
   return Math.round(x * 100);
+}
+
+// Dal campo rischio_squalifica di un giocatore in rosa.json (vedi design.md
+// sez. 16 nel repo privato: {ammonizioni, prossima_soglia, distanza,
+// a_rischio, affidabile}) allo stato del badge da mostrare sulla card.
+//
+// Tre stati distinti, mai due, e il terzo NON e' un sinonimo del secondo:
+// - 'rischio'  -> a_rischio true: badge pieno, il giocatore e' diffidato.
+// - null       -> a_rischio false, o l'intero campo assente (es. esordiente
+//                 senza ancora righe nella fonte): nessun badge.
+// - 'incerto'  -> a_rischio null perche' affidabile e' false. Il motore ha
+//                 smesso di giudicare (un azzeramento cartellini di Lega
+//                 Serie A non ancora configurato rende il conteggio grezzo
+//                 non piu' affidabile - vedi statistiche_stagione.py nel
+//                 repo privato), NON "nessun rischio": va reso in modo
+//                 visibilmente diverso sia dal pieno sia dal niente.
+//
+// Pura, nessun accesso al DOM: testabile in isolamento.
+function statoBadgeSqualifica(rischio) {
+  if (!rischio) return null;
+
+  if (rischio.affidabile === false) {
+    return {
+      tipo: 'incerto',
+      testo: 'dato incerto',
+      titolo: `Rischio squalifica non aggiornato dopo un azzeramento cartellini non ancora configurato (${rischio.ammonizioni} ammonizioni registrate).`,
+    };
+  }
+
+  if (rischio.a_rischio === true) {
+    return {
+      tipo: 'rischio',
+      testo: 'diffidato',
+      titolo: `A un cartellino dalla squalifica: ${rischio.ammonizioni}/${rischio.prossima_soglia} ammonizioni.`,
+    };
+  }
+
+  return null;
 }
 
 async function fetchJSON(path) {
@@ -92,13 +131,22 @@ function renderRosa(data) {
 
     for (const p of delRuolo) {
       const sottoParti = [p.squadra, p.fantamedia != null ? `fm ${n1(p.fantamedia)}` : null].filter(Boolean);
-      const chip = el('div', 'player-chip', [
+      const chipChildren = [
         textEl('span', 'avatar avatar-28', iniz(p.nome)),
         el('div', 'player-chip-body', [
           textEl('div', 'player-chip-nome', p.nome),
           textEl('div', 'player-chip-meta', sottoParti.join(' · ')),
         ]),
-      ]);
+      ];
+
+      const badgeInfo = statoBadgeSqualifica(p.rischio_squalifica);
+      if (badgeInfo) {
+        const badge = textEl('span', `badge-squalifica badge-squalifica-${badgeInfo.tipo}`, badgeInfo.testo);
+        badge.title = badgeInfo.titolo;
+        chipChildren.push(badge);
+      }
+
+      const chip = el('div', 'player-chip', chipChildren);
       gruppo.appendChild(chip);
     }
 
@@ -254,6 +302,127 @@ function renderFormazione(data) {
 }
 
 // ---------------------------------------------------------------------------
+// L'accuratezza storica (MAE per giornata)
+// ---------------------------------------------------------------------------
+// accuratezza.json (vedi design.md sez. 16 nel repo privato):
+// {stagione, generato_il, giornate: [{giornata, mae, count}, ...]}.
+// Nessun calcolo qui: solo formattazione di un MAE gia' calcolato da
+// scripts/backtesting.py::calcola_mae_per_giornata.
+
+function scalaLineare(valore, dominioMin, dominioMax, rangeMin, rangeMax) {
+  if (dominioMax === dominioMin) return (rangeMin + rangeMax) / 2;
+  const t = (valore - dominioMin) / (dominioMax - dominioMin);
+  return rangeMin + t * (rangeMax - rangeMin);
+}
+
+// Dalle giornate {giornata, mae, count} ai punti del grafico a linee SVG.
+// Pura, nessun accesso al DOM: testabile in isolamento. Null se non c'e'
+// nessuna giornata (il chiamante decide cosa mostrare in quel caso).
+//
+// L'asse Y e' invertito rispetto ai dati (MAE piu' basso, cioe' migliore,
+// sta piu' in alto nel grafico): e' la lettura naturale di un grafico
+// "andamento dell'errore", non un dettaglio implementativo da nascondere.
+function costruisciGraficoMae(giornate, { larghezza = 600, altezza = 200, padding = 28 } = {}) {
+  if (!Array.isArray(giornate) || giornate.length === 0) return null;
+
+  const maeValori = giornate.map(g => g.mae);
+  const maeMinDati = Math.min(...maeValori);
+  const maeMaxDati = Math.max(...maeValori);
+  // Se tutte le giornate hanno lo stesso MAE il dominio sarebbe degenere
+  // (dominioMin === dominioMax): un margine simbolico mantiene la linea
+  // leggibile a meta' altezza invece di schiacciarla su un bordo per un
+  // effetto di scalaLineare che non ha nulla a che fare col dato reale.
+  const yMin = maeMinDati === maeMaxDati ? maeMinDati - 0.5 : maeMinDati;
+  const yMax = maeMinDati === maeMaxDati ? maeMaxDati + 0.5 : maeMaxDati;
+
+  const giornataMin = giornate[0].giornata;
+  const giornataMax = giornate[giornate.length - 1].giornata;
+
+  const punti = giornate.map(g => ({
+    giornata: g.giornata,
+    mae: g.mae,
+    count: g.count,
+    x: scalaLineare(g.giornata, giornataMin, giornataMax, padding, larghezza - padding),
+    // MAE piu' basso (migliore) -> y piu' piccola (piu' in alto nell'SVG,
+    // dove y cresce verso il basso): yMin (il migliore) mappa a `padding`
+    // (in alto), yMax (il peggiore) mappa a `altezza - padding` (in basso).
+    y: scalaLineare(g.mae, yMin, yMax, padding, altezza - padding),
+  }));
+
+  return {
+    larghezza, altezza, padding,
+    puntiPolilinea: punti.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' '),
+    punti,
+    maeMin: maeMinDati,
+    maeMax: maeMaxDati,
+  };
+}
+
+function svgEl(tag, attrs) {
+  const node = document.createElementNS('http://www.w3.org/2000/svg', tag);
+  for (const [k, v] of Object.entries(attrs || {})) node.setAttribute(k, v);
+  return node;
+}
+
+function renderAccuratezza(data) {
+  const root = document.getElementById('accuratezza-root');
+  root.innerHTML = '';
+
+  const giornate = data && Array.isArray(data.giornate) ? data.giornate : [];
+
+  if (giornate.length === 0) {
+    root.appendChild(el('div', 'card', [
+      textEl('div', 'card-title', 'Accuratezza delle previsioni'),
+      textEl('div', 'card-meta', 'Dati non ancora disponibili: si popolano dopo che post_giornata.py gira sulla prima giornata giocata.'),
+    ]));
+    return;
+  }
+
+  const grafico = costruisciGraficoMae(giornate);
+  const media = giornate.reduce((s, g) => s + g.mae, 0) / giornate.length;
+  const ultima = giornate[giornate.length - 1];
+
+  const svg = svgEl('svg', {
+    viewBox: `0 0 ${grafico.larghezza} ${grafico.altezza}`,
+    class: 'mae-chart-svg',
+    role: 'img',
+    'aria-label': `Andamento del MAE dalla giornata ${giornate[0].giornata} alla ${ultima.giornata}: da ${n1(giornate[0].mae)} a ${n1(ultima.mae)}`,
+  });
+
+  svg.appendChild(svgEl('line', {
+    x1: grafico.padding, x2: grafico.larghezza - grafico.padding,
+    y1: grafico.altezza / 2, y2: grafico.altezza / 2,
+    class: 'mae-chart-asse',
+  }));
+
+  svg.appendChild(svgEl('polyline', { points: grafico.puntiPolilinea, class: 'mae-chart-linea' }));
+
+  for (const p of grafico.punti) {
+    const punto = svgEl('circle', { cx: p.x.toFixed(1), cy: p.y.toFixed(1), r: 3.5, class: 'mae-chart-punto' });
+    const titolo = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+    titolo.textContent = `Giornata ${p.giornata}: MAE ${n1(p.mae)} (${p.count} giocatori)`;
+    punto.appendChild(titolo);
+    svg.appendChild(punto);
+  }
+
+  const chartCard = el('div', 'card', [
+    el('div', 'field-header', [
+      textEl('div', 'card-title', 'Accuratezza delle previsioni'),
+      textEl('div', 'card-meta', `Media stagionale ${n1(media)} · ultima giornata ${n1(ultima.mae)}`),
+    ]),
+    textEl('div', 'card-meta mae-chart-nota', 'Errore medio (MAE) fra punteggio atteso e voto reale, giornata per giornata — più basso è meglio.'),
+    el('div', 'mae-chart-wrap', [svg]),
+    el('div', 'mae-lista', giornate.map(g => el('div', 'mae-row', [
+      textEl('span', 'mae-row-giornata', `G${g.giornata}`),
+      textEl('span', 'mae-row-valore', n1(g.mae)),
+      textEl('span', 'mae-row-count', `${g.count} giocatori`),
+    ]))),
+  ]);
+
+  root.appendChild(chartCard);
+}
+
+// ---------------------------------------------------------------------------
 // Navigazione a tab + avvio
 // ---------------------------------------------------------------------------
 
@@ -270,6 +439,7 @@ function mostraSchermata(nome) {
 async function init() {
   document.getElementById('tab-rosa').addEventListener('click', () => mostraSchermata('rosa'));
   document.getElementById('tab-formazione').addEventListener('click', () => mostraSchermata('formazione'));
+  document.getElementById('tab-accuratezza').addEventListener('click', () => mostraSchermata('accuratezza'));
 
   let schermataIniziale = 'rosa';
   if (location.hash === '#formazione') {
@@ -278,22 +448,24 @@ async function init() {
   } else {
     try {
       const salvata = localStorage.getItem('fo:schermata');
-      if (salvata === 'rosa' || salvata === 'formazione') schermataIniziale = salvata;
+      if (['rosa', 'formazione', 'accuratezza'].includes(salvata)) schermataIniziale = salvata;
     } catch (e) { /* privacy mode: usa il default */ }
   }
   mostraSchermata(schermataIniziale);
 
-  const [rosa, formazione] = await Promise.all([
+  const [rosa, formazione, accuratezza] = await Promise.all([
     fetchJSON('./rosa.json'),
     fetchJSON('./formazione.json'),
+    fetchJSON('./accuratezza.json'),
   ]);
 
-  if (!rosa && !formazione) {
+  if (!rosa && !formazione && !accuratezza) {
     document.getElementById('empty-state').hidden = false;
   }
 
   renderRosa(rosa);
   renderFormazione(formazione);
+  renderAccuratezza(accuratezza);
 
   const giornata = formazione && formazione.giornata != null ? formazione.giornata : (rosa && rosa.giornata);
   document.getElementById('brand-sub').textContent = giornata != null
@@ -383,4 +555,18 @@ function initNotifiche() {
   });
 }
 
-init();
+// Solo in un vero browser: caricare questo file con `require` da un test
+// Node (vedi tests/app.test.js) non deve toccare il DOM.
+if (typeof document !== 'undefined') {
+  init();
+}
+
+// Espone le funzioni pure per i test (node:test, nessuna dipendenza).
+// Non ha effetto nel browser: un semplice <script> non definisce `module`.
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    n1, pct, iniz,
+    statoBadgeSqualifica,
+    scalaLineare, costruisciGraficoMae,
+  };
+}

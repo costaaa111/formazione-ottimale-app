@@ -16,6 +16,8 @@
   --shadow-card: 0 1px 2px rgba(20,22,28,0.04), 0 10px 30px rgba(20,22,28,0.05);
   --shadow-chip: 0 2px 8px rgba(20,22,28,0.06);
   --danger-text: oklch(0.45 0.16 25);
+  --risk-text: oklch(0.5 0.16 80);
+  --risk-bg: oklch(0.94 0.07 80);
 }
 
 * { box-sizing: border-box; }
@@ -70,6 +72,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--pill-bg);
   padding: 4px;
   border-radius: 999px;
+  min-width: 0;
 }
 
 .tab {
@@ -159,6 +162,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--group-bg);
   border-radius: 20px;
   padding: 14px 12px;
+  min-width: 0; /* la griglia auto-fit non deve allargarsi oltre il contenitore
+                   per far stare un badge senza andare a capo (vedi .player-chip) */
 }
 
 .gruppo-head {
@@ -174,11 +179,18 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .player-chip {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px;
   background: #fff;
   border-radius: 999px;
   padding: 6px 8px 6px 6px;
   margin-bottom: 6px;
+}
+/* Quando il badge va a capo su una seconda riga (spazio stretto), la pillola
+   a raggio 999px diventerebbe un ovale sproporzionato su un box piu' alto:
+   :has() la ammorbidisce solo per i chip che hanno davvero un badge, cosi'
+   quelli senza restano pillole identiche a prima. */
+.player-chip:has(.badge-squalifica) {
+  border-radius: 16px;
 }
 
 .avatar {
@@ -196,6 +208,34 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .player-chip-body { flex: 1; min-width: 0; }
 .player-chip-nome { font-size: 12.5px; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
 .player-chip-meta { font-size: 10.5px; color: var(--muted); margin-top: 1px; }
+
+/* Badge "rischio squalifica" (rosa.json: rischio_squalifica). Tre stati
+   possibili, due li rende statoBadgeSqualifica in app.js: 'rischio' (badge
+   pieno) e 'incerto' (contorno tratteggiato, mai lo stesso stile del pieno -
+   comunica "il sistema non si esprime", non "sei diffidato" ne' "sei
+   tranquillo"). Il terzo stato (nessun rischio, o dato assente) non produce
+   alcun badge. */
+.badge-squalifica {
+  flex: none;
+  margin-left: auto; /* ancorato a destra quando c'e' spazio; se manca, va a
+                         capo sotto nome/meta invece di spingere il chip a
+                         forzare la larghezza del contenitore (vedi .gruppo) */
+  font-size: 9.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 3px 8px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.badge-squalifica-rischio {
+  color: var(--risk-text);
+  background: var(--risk-bg);
+}
+.badge-squalifica-incerto {
+  color: var(--muted);
+  background: transparent;
+  border: 1px dashed var(--border);
+}
 
 /* ---------- Screen La formazione ---------- */
 
@@ -319,6 +359,50 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   background: var(--accent-soft);
   border-radius: 999px; padding: 4px 10px;
 }
+
+/* ---------- Screen Accuratezza ---------- */
+
+.mae-chart-nota { margin-top: 2px; }
+
+.mae-chart-wrap { margin-top: 18px; }
+
+.mae-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.mae-chart-asse {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.mae-chart-linea {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.mae-chart-punto {
+  fill: var(--card-bg);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.mae-lista { display: flex; flex-direction: column; gap: 7px; margin-top: 18px; }
+
+.mae-row {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--group-bg); border-radius: 999px; padding: 7px 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mae-row-giornata { flex: none; width: 36px; font-size: 12px; font-weight: 800; color: var(--muted); }
+.mae-row-valore { flex: none; font-size: 13px; font-weight: 700; }
+.mae-row-count { flex: 1; text-align: right; font-size: 11px; color: var(--muted); }
 
 /* ---------- Stato vuoto ---------- */
 

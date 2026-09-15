@@ -6,9 +6,9 @@
 // Actions). Nessuna logica di dominio qui dentro: solo caching e
 // visualizzazione della notifica ricevuta.
 
-const CACHE_VERSION = 'fo-v2';
+const CACHE_VERSION = 'fo-v3';
 const APP_SHELL = ['./', './index.html', './style.css', './app.js', './manifest.json'];
-const DATA_PATHS = ['/rosa.json', '/formazione.json'];
+const DATA_PATHS = ['/rosa.json', '/formazione.json', '/accuratezza.json'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

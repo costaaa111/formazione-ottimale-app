@@ -1,0 +1,8 @@
+{
+  "name": "formazione-ottimale-app",
+  "private": true,
+  "description": "PWA di sola lettura per Formazione Ottimale (Fantacalcio). Nessuna dipendenza: solo file statici.",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
