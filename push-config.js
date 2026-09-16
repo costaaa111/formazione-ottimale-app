@@ -6,4 +6,4 @@
 //
 // Generata una tantum con `python scripts/genera_vapid_keys.py` -- vedi
 // DEVELOPMENT.md per la procedura completa di attivazione delle notifiche.
-const VAPID_PUBLIC_KEY = "BPj6DrRFUAcOJwHUZuT0fRIRMFn3E-Z_7y2N8e6nXel5Et4l6CogZ0OQ9rX4YGAPVfX2R9NnRwg8NMEAc9i1AEo";
+const VAPID_PUBLIC_KEY = "BDSa_0wEKxeYrv6Qz5nl8Kgaydu0K_U11yj8m_x5KAyh0mO0FsLfFqJXoMZK-P6Hns0JOJrn0Osho5DnJjvBjdg";
