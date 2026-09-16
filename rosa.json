@@ -4,153 +4,328 @@
       "nome": "Bowie",
       "ruolo": "A",
       "squadra": "Sassuolo",
-      "fantamedia": 6.47
+      "fantamedia": 6.47,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Krstovic",
       "ruolo": "A",
       "squadra": "Atalanta",
-      "fantamedia": 6.98
+      "fantamedia": 6.98,
+      "rischio_squalifica": {
+        "ammonizioni": 1,
+        "prossima_soglia": 5,
+        "distanza": 4,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Romero D.",
       "ruolo": "A",
       "squadra": "Parma",
-      "fantamedia": 6.0
+      "fantamedia": 6.0,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Scamacca",
       "ruolo": "A",
       "squadra": "Atalanta",
-      "fantamedia": 6.86
+      "fantamedia": 6.86,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Thuram",
       "ruolo": "A",
       "squadra": "Inter",
-      "fantamedia": 7.87
+      "fantamedia": 7.87,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Yeboah J.",
       "ruolo": "A",
       "squadra": "Venezia",
-      "fantamedia": 7.5
+      "fantamedia": 7.5,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Bernardeschi",
       "ruolo": "C",
       "squadra": "Bologna",
-      "fantamedia": 6.47
+      "fantamedia": 6.47,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "McKennie",
       "ruolo": "C",
       "squadra": "Juventus",
-      "fantamedia": 6.41
+      "fantamedia": 6.41,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "McTominay",
       "ruolo": "C",
       "squadra": "Napoli",
-      "fantamedia": 6.65
+      "fantamedia": 6.65,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Rodriguez Je.",
       "ruolo": "C",
       "squadra": "Como",
-      "fantamedia": 6.2
+      "fantamedia": 6.2,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Sucic P.",
       "ruolo": "C",
       "squadra": "Inter",
-      "fantamedia": 6.23
+      "fantamedia": 6.23,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Taylor K.",
       "ruolo": "C",
       "squadra": "Lazio",
-      "fantamedia": 6.34
+      "fantamedia": 6.34,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Thorstvedt",
       "ruolo": "C",
       "squadra": "Sassuolo",
-      "fantamedia": 6.29
+      "fantamedia": 6.29,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Zielinski",
       "ruolo": "C",
       "squadra": "Inter",
-      "fantamedia": 7.15
+      "fantamedia": 7.15,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "De Winter",
       "ruolo": "D",
       "squadra": "Milan",
-      "fantamedia": 6.14
+      "fantamedia": 6.14,
+      "rischio_squalifica": {
+        "ammonizioni": 1,
+        "prossima_soglia": 5,
+        "distanza": 4,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Dimarco",
       "ruolo": "D",
       "squadra": "Inter",
-      "fantamedia": 7.25
+      "fantamedia": 7.25,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Kelly L.",
       "ruolo": "D",
       "squadra": "Juventus",
-      "fantamedia": 5.94
+      "fantamedia": 5.94,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Monterisi",
       "ruolo": "D",
       "squadra": "Frosinone",
-      "fantamedia": 6.0
+      "fantamedia": 6.0,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Pavlovic",
       "ruolo": "D",
       "squadra": "Milan",
-      "fantamedia": 6.37
+      "fantamedia": 6.37,
+      "rischio_squalifica": {
+        "ammonizioni": 1,
+        "prossima_soglia": 5,
+        "distanza": 4,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Spence",
       "ruolo": "D",
       "squadra": "Inter",
-      "fantamedia": 6.54
+      "fantamedia": 6.54,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Spinazzola",
       "ruolo": "D",
       "squadra": "Napoli",
-      "fantamedia": 6.2
+      "fantamedia": 6.2,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Valdepenas",
       "ruolo": "D",
       "squadra": "Fiorentina",
-      "fantamedia": 5.0
+      "fantamedia": 5.0,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Falcone",
       "ruolo": "P",
       "squadra": "Lecce",
-      "fantamedia": 4.93
+      "fantamedia": 4.93,
+      "rischio_squalifica": {
+        "ammonizioni": 1,
+        "prossima_soglia": 5,
+        "distanza": 4,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Grabara",
       "ruolo": "P",
       "squadra": "Juventus",
-      "fantamedia": 5.22
+      "fantamedia": 5.22,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     },
     {
       "nome": "Vicario",
       "ruolo": "P",
       "squadra": "Juventus",
-      "fantamedia": 5.83
+      "fantamedia": 5.83,
+      "rischio_squalifica": {
+        "ammonizioni": 0,
+        "prossima_soglia": 5,
+        "distanza": 5,
+        "a_rischio": false,
+        "affidabile": true
+      }
     }
   ],
   "stagione": "2026/27",
-  "generato_il": "2026-09-11T00:32:17+02:00"
+  "generato_il": "2026-09-15T18:19:39+00:00"
 }
