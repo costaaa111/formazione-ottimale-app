@@ -1,7 +1,7 @@
 {
   "stagione": "2026/27",
   "giornata": 5,
-  "generato_il": "2026-09-17T15:59:16+00:00",
+  "generato_il": "2026-09-17T20:09:20+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
@@ -170,22 +170,22 @@
         "flag": null
       },
       {
+        "nome": "Kelly L.",
+        "ruolo": "D",
+        "score_finale": 2.54,
+        "fantamedia": 5.79,
+        "prob_titolarita": 0.45,
+        "avversario": "Atalanta",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Monterisi",
         "ruolo": "D",
         "score_finale": 2.28,
         "fantamedia": 5.83,
         "prob_titolarita": 0.4,
         "avversario": "Como",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Kelly L.",
-        "ruolo": "D",
-        "score_finale": 2.25,
-        "fantamedia": 5.79,
-        "prob_titolarita": 0.4,
-        "avversario": "Atalanta",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -222,9 +222,9 @@
       {
         "nome": "McKennie",
         "ruolo": "C",
-        "score_finale": 0.87,
+        "score_finale": 2.14,
         "fantamedia": 6.34,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.35,
         "avversario": "Atalanta",
         "casa_trasferta": "casa",
         "flag": null
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 58.8,
+    "punteggio_atteso": 59.05,
     "reparti": [
       {
         "ruolo": "P",
@@ -352,12 +352,12 @@
             "flag": null
           },
           {
-            "nome": "Monterisi",
+            "nome": "Kelly L.",
             "ruolo": "D",
-            "score_finale": 2.28,
-            "fantamedia": 5.83,
-            "prob_titolarita": 0.4,
-            "avversario": "Como",
+            "score_finale": 2.54,
+            "fantamedia": 5.79,
+            "prob_titolarita": 0.45,
+            "avversario": "Atalanta",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -466,12 +466,12 @@
         "flag": null
       },
       {
-        "nome": "Kelly L.",
+        "nome": "Monterisi",
         "ruolo": "D",
-        "score_finale": 2.25,
-        "fantamedia": 5.79,
+        "score_finale": 2.28,
+        "fantamedia": 5.83,
         "prob_titolarita": 0.4,
-        "avversario": "Atalanta",
+        "avversario": "Como",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -518,9 +518,9 @@
       {
         "nome": "McKennie",
         "ruolo": "C",
-        "score_finale": 0.87,
+        "score_finale": 2.14,
         "fantamedia": 6.34,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.35,
         "avversario": "Atalanta",
         "casa_trasferta": "casa",
         "flag": null
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 1.53
+  "differenza_punteggio_atteso": 1.28
 }
