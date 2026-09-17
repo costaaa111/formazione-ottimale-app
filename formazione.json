@@ -1,7 +1,7 @@
 {
   "stagione": "2026/27",
   "giornata": 5,
-  "generato_il": "2026-09-17T10:46:22+00:00",
+  "generato_il": "2026-09-17T12:33:07+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
@@ -73,7 +73,7 @@
           {
             "nome": "Taylor K.",
             "ruolo": "C",
-            "score_finale": 5.59,
+            "score_finale": 5.58,
             "fantamedia": 6.28,
             "prob_titolarita": 0.9,
             "avversario": "Venezia",
@@ -83,7 +83,7 @@
           {
             "nome": "Bernardeschi",
             "ruolo": "C",
-            "score_finale": 5.57,
+            "score_finale": 5.56,
             "fantamedia": 6.41,
             "prob_titolarita": 0.9,
             "avversario": "Torino",
@@ -93,7 +93,7 @@
           {
             "nome": "Thorstvedt",
             "ruolo": "C",
-            "score_finale": 5.45,
+            "score_finale": 5.44,
             "fantamedia": 6.18,
             "prob_titolarita": 0.9,
             "avversario": "Monza",
@@ -128,7 +128,7 @@
           {
             "nome": "Thuram",
             "ruolo": "A",
-            "score_finale": 4.32,
+            "score_finale": 4.33,
             "fantamedia": 8.47,
             "prob_titolarita": 0.55,
             "avversario": "Roma",
@@ -272,7 +272,7 @@
       {
         "nome": "Krstovic",
         "ruolo": "A",
-        "score_finale": 0.66,
+        "score_finale": 0.65,
         "fantamedia": 6.78,
         "prob_titolarita": 0.15,
         "avversario": "Juventus",
@@ -379,7 +379,7 @@
           {
             "nome": "Taylor K.",
             "ruolo": "C",
-            "score_finale": 5.59,
+            "score_finale": 5.58,
             "fantamedia": 6.28,
             "prob_titolarita": 0.9,
             "avversario": "Venezia",
@@ -389,7 +389,7 @@
           {
             "nome": "Bernardeschi",
             "ruolo": "C",
-            "score_finale": 5.57,
+            "score_finale": 5.56,
             "fantamedia": 6.41,
             "prob_titolarita": 0.9,
             "avversario": "Torino",
@@ -424,7 +424,7 @@
           {
             "nome": "Thuram",
             "ruolo": "A",
-            "score_finale": 4.32,
+            "score_finale": 4.33,
             "fantamedia": 8.47,
             "prob_titolarita": 0.55,
             "avversario": "Roma",
@@ -498,7 +498,7 @@
       {
         "nome": "Thorstvedt",
         "ruolo": "C",
-        "score_finale": 5.45,
+        "score_finale": 5.44,
         "fantamedia": 6.18,
         "prob_titolarita": 0.9,
         "avversario": "Monza",
@@ -568,7 +568,7 @@
       {
         "nome": "Krstovic",
         "ruolo": "A",
-        "score_finale": 0.66,
+        "score_finale": 0.65,
         "fantamedia": 6.78,
         "prob_titolarita": 0.15,
         "avversario": "Juventus",
