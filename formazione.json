@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 5,
-  "generato_il": "2026-09-18T12:10:48+00:00",
+  "generato_il": "2026-09-18T16:41:29+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 57.12,
+    "punteggio_atteso": 57.39,
     "reparti": [
       {
         "ruolo": "P",
@@ -126,13 +126,13 @@
             "flag": null
           },
           {
-            "nome": "Romero D.",
+            "nome": "Thuram",
             "ruolo": "A",
-            "score_finale": 4.18,
-            "fantamedia": 7.33,
-            "prob_titolarita": 0.55,
-            "avversario": "Genoa",
-            "casa_trasferta": "casa",
+            "score_finale": 4.44,
+            "fantamedia": 8.47,
+            "prob_titolarita": 0.6,
+            "avversario": "Roma",
+            "casa_trasferta": "trasferta",
             "flag": null
           }
         ]
@@ -180,16 +180,6 @@
         "flag": null
       },
       {
-        "nome": "Spinazzola",
-        "ruolo": "D",
-        "score_finale": 0.94,
-        "fantamedia": 6.21,
-        "prob_titolarita": 0.15,
-        "avversario": "Fiorentina",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.92,
@@ -210,14 +200,14 @@
         "flag": null
       },
       {
-        "nome": "Sucic P.",
-        "ruolo": "C",
-        "score_finale": 2.23,
+        "nome": "Spinazzola",
+        "ruolo": "D",
+        "score_finale": 0.0,
         "fantamedia": 6.21,
-        "prob_titolarita": 0.4,
-        "avversario": "Roma",
+        "prob_titolarita": 0.0,
+        "avversario": "Fiorentina",
         "casa_trasferta": "trasferta",
-        "flag": null
+        "flag": "infortunato"
       },
       {
         "nome": "McKennie",
@@ -240,6 +230,16 @@
         "flag": null
       },
       {
+        "nome": "Sucic P.",
+        "ruolo": "C",
+        "score_finale": 0.76,
+        "fantamedia": 6.21,
+        "prob_titolarita": 0.15,
+        "avversario": "Roma",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "McTominay",
         "ruolo": "C",
         "score_finale": 0.0,
@@ -250,21 +250,21 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Thuram",
+        "nome": "Romero D.",
         "ruolo": "A",
-        "score_finale": 4.07,
-        "fantamedia": 8.47,
+        "score_finale": 4.18,
+        "fantamedia": 7.33,
         "prob_titolarita": 0.55,
-        "avversario": "Roma",
-        "casa_trasferta": "trasferta",
+        "avversario": "Genoa",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
         "nome": "Bowie",
         "ruolo": "A",
-        "score_finale": 2.96,
+        "score_finale": 0.97,
         "fantamedia": 6.89,
-        "prob_titolarita": 0.45,
+        "prob_titolarita": 0.15,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -282,12 +282,12 @@
     ],
     "esclusi": [
       {
-        "nome": "Thuram",
-        "motivo": "Roma ha concesso poco a chi gioca nel suo ruolo nelle ultime partite."
+        "nome": "Romero D.",
+        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
       },
       {
         "nome": "Bowie",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Krstovic",
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 55.59,
+    "punteggio_atteso": 55.86,
     "reparti": [
       {
         "ruolo": "P",
@@ -422,13 +422,13 @@
             "flag": null
           },
           {
-            "nome": "Romero D.",
+            "nome": "Thuram",
             "ruolo": "A",
-            "score_finale": 4.18,
-            "fantamedia": 7.33,
-            "prob_titolarita": 0.55,
-            "avversario": "Genoa",
-            "casa_trasferta": "casa",
+            "score_finale": 4.44,
+            "fantamedia": 8.47,
+            "prob_titolarita": 0.6,
+            "avversario": "Roma",
+            "casa_trasferta": "trasferta",
             "flag": null
           }
         ]
@@ -466,16 +466,6 @@
         "flag": null
       },
       {
-        "nome": "Spinazzola",
-        "ruolo": "D",
-        "score_finale": 0.94,
-        "fantamedia": 6.21,
-        "prob_titolarita": 0.15,
-        "avversario": "Fiorentina",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.92,
@@ -496,6 +486,16 @@
         "flag": null
       },
       {
+        "nome": "Spinazzola",
+        "ruolo": "D",
+        "score_finale": 0.0,
+        "fantamedia": 6.21,
+        "prob_titolarita": 0.0,
+        "avversario": "Fiorentina",
+        "casa_trasferta": "trasferta",
+        "flag": "infortunato"
+      },
+      {
         "nome": "Bernardeschi",
         "ruolo": "C",
         "score_finale": 3.82,
@@ -503,16 +503,6 @@
         "prob_titolarita": 0.6,
         "avversario": "Torino",
         "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Sucic P.",
-        "ruolo": "C",
-        "score_finale": 2.23,
-        "fantamedia": 6.21,
-        "prob_titolarita": 0.4,
-        "avversario": "Roma",
-        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -536,6 +526,16 @@
         "flag": null
       },
       {
+        "nome": "Sucic P.",
+        "ruolo": "C",
+        "score_finale": 0.76,
+        "fantamedia": 6.21,
+        "prob_titolarita": 0.15,
+        "avversario": "Roma",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "McTominay",
         "ruolo": "C",
         "score_finale": 0.0,
@@ -546,21 +546,21 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Thuram",
+        "nome": "Romero D.",
         "ruolo": "A",
-        "score_finale": 4.07,
-        "fantamedia": 8.47,
+        "score_finale": 4.18,
+        "fantamedia": 7.33,
         "prob_titolarita": 0.55,
-        "avversario": "Roma",
-        "casa_trasferta": "trasferta",
+        "avversario": "Genoa",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
         "nome": "Bowie",
         "ruolo": "A",
-        "score_finale": 2.96,
+        "score_finale": 0.97,
         "fantamedia": 6.89,
-        "prob_titolarita": 0.45,
+        "prob_titolarita": 0.15,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -578,12 +578,12 @@
     ],
     "esclusi": [
       {
-        "nome": "Thuram",
-        "motivo": "Roma ha concesso poco a chi gioca nel suo ruolo nelle ultime partite."
+        "nome": "Romero D.",
+        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
       },
       {
         "nome": "Bowie",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Krstovic",
