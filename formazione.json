@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 5,
-  "generato_il": "2026-09-17T20:09:20+00:00",
+  "generato_il": "2026-09-18T11:49:43+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 60.33,
+    "punteggio_atteso": 57.12,
     "reparti": [
       {
         "ruolo": "P",
@@ -36,22 +36,22 @@
             "flag": null
           },
           {
-            "nome": "Spinazzola",
-            "ruolo": "D",
-            "score_finale": 5.75,
-            "fantamedia": 6.21,
-            "prob_titolarita": 0.9,
-            "avversario": "Fiorentina",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
             "nome": "Pavlovic",
             "ruolo": "D",
             "score_finale": 5.54,
             "fantamedia": 6.18,
             "prob_titolarita": 0.9,
             "avversario": "Lecce",
+            "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Kelly L.",
+            "ruolo": "D",
+            "score_finale": 2.54,
+            "fantamedia": 5.79,
+            "prob_titolarita": 0.45,
+            "avversario": "Atalanta",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -170,16 +170,6 @@
         "flag": null
       },
       {
-        "nome": "Kelly L.",
-        "ruolo": "D",
-        "score_finale": 2.54,
-        "fantamedia": 5.79,
-        "prob_titolarita": 0.45,
-        "avversario": "Atalanta",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
         "nome": "Monterisi",
         "ruolo": "D",
         "score_finale": 2.28,
@@ -187,6 +177,16 @@
         "prob_titolarita": 0.4,
         "avversario": "Como",
         "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
+        "nome": "Spinazzola",
+        "ruolo": "D",
+        "score_finale": 0.94,
+        "fantamedia": 6.21,
+        "prob_titolarita": 0.15,
+        "avversario": "Fiorentina",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -262,9 +262,9 @@
       {
         "nome": "Bowie",
         "ruolo": "A",
-        "score_finale": 2.63,
+        "score_finale": 2.96,
         "fantamedia": 6.89,
-        "prob_titolarita": 0.4,
+        "prob_titolarita": 0.45,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -287,7 +287,7 @@
       },
       {
         "nome": "Bowie",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Krstovic",
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 59.05,
+    "punteggio_atteso": 55.59,
     "reparti": [
       {
         "ruolo": "P",
@@ -332,16 +332,6 @@
             "flag": null
           },
           {
-            "nome": "Spinazzola",
-            "ruolo": "D",
-            "score_finale": 5.75,
-            "fantamedia": 6.21,
-            "prob_titolarita": 0.9,
-            "avversario": "Fiorentina",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
             "nome": "Pavlovic",
             "ruolo": "D",
             "score_finale": 5.54,
@@ -358,6 +348,16 @@
             "fantamedia": 5.79,
             "prob_titolarita": 0.45,
             "avversario": "Atalanta",
+            "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Monterisi",
+            "ruolo": "D",
+            "score_finale": 2.28,
+            "fantamedia": 5.83,
+            "prob_titolarita": 0.4,
+            "avversario": "Como",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -466,13 +466,13 @@
         "flag": null
       },
       {
-        "nome": "Monterisi",
+        "nome": "Spinazzola",
         "ruolo": "D",
-        "score_finale": 2.28,
-        "fantamedia": 5.83,
-        "prob_titolarita": 0.4,
-        "avversario": "Como",
-        "casa_trasferta": "casa",
+        "score_finale": 0.94,
+        "fantamedia": 6.21,
+        "prob_titolarita": 0.15,
+        "avversario": "Fiorentina",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -558,9 +558,9 @@
       {
         "nome": "Bowie",
         "ruolo": "A",
-        "score_finale": 2.63,
+        "score_finale": 2.96,
         "fantamedia": 6.89,
-        "prob_titolarita": 0.4,
+        "prob_titolarita": 0.45,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -583,7 +583,7 @@
       },
       {
         "nome": "Bowie",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Krstovic",
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 1.28
+  "differenza_punteggio_atteso": 1.53
 }
