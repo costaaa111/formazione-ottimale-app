@@ -4,7 +4,7 @@
       "nome": "Bowie",
       "ruolo": "A",
       "squadra": "Sassuolo",
-      "fantamedia": 6.89,
+      "fantamedia": 6.79,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -17,7 +17,7 @@
       "nome": "Krstovic",
       "ruolo": "A",
       "squadra": "Atalanta",
-      "fantamedia": 6.78,
+      "fantamedia": 6.54,
       "rischio_squalifica": {
         "ammonizioni": 1,
         "prossima_soglia": 5,
@@ -30,7 +30,7 @@
       "nome": "Romero D.",
       "ruolo": "A",
       "squadra": "Parma",
-      "fantamedia": 7.33,
+      "fantamedia": 8.0,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -43,7 +43,7 @@
       "nome": "Scamacca",
       "ruolo": "A",
       "squadra": "Atalanta",
-      "fantamedia": 7.21,
+      "fantamedia": 6.98,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -56,7 +56,7 @@
       "nome": "Thuram",
       "ruolo": "A",
       "squadra": "Inter",
-      "fantamedia": 8.47,
+      "fantamedia": 8.35,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -69,7 +69,7 @@
       "nome": "Yeboah J.",
       "ruolo": "A",
       "squadra": "Venezia",
-      "fantamedia": 7.0,
+      "fantamedia": 5.9,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -82,7 +82,7 @@
       "nome": "Bernardeschi",
       "ruolo": "C",
       "squadra": "Bologna",
-      "fantamedia": 6.4,
+      "fantamedia": 6.88,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -95,7 +95,7 @@
       "nome": "McKennie",
       "ruolo": "C",
       "squadra": "Juventus",
-      "fantamedia": 6.34,
+      "fantamedia": 6.43,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -108,7 +108,7 @@
       "nome": "McTominay",
       "ruolo": "C",
       "squadra": "Napoli",
-      "fantamedia": 6.5,
+      "fantamedia": 6.35,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -121,7 +121,7 @@
       "nome": "Rodriguez Je.",
       "ruolo": "C",
       "squadra": "Como",
-      "fantamedia": 6.21,
+      "fantamedia": 6.17,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -134,7 +134,7 @@
       "nome": "Sucic P.",
       "ruolo": "C",
       "squadra": "Inter",
-      "fantamedia": 6.21,
+      "fantamedia": 6.17,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -147,7 +147,7 @@
       "nome": "Taylor K.",
       "ruolo": "C",
       "squadra": "Lazio",
-      "fantamedia": 6.28,
+      "fantamedia": 6.29,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -160,7 +160,7 @@
       "nome": "Thorstvedt",
       "ruolo": "C",
       "squadra": "Sassuolo",
-      "fantamedia": 6.17,
+      "fantamedia": 6.06,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -173,7 +173,7 @@
       "nome": "Zielinski",
       "ruolo": "C",
       "squadra": "Inter",
-      "fantamedia": 7.25,
+      "fantamedia": 7.04,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -186,7 +186,7 @@
       "nome": "De Winter",
       "ruolo": "D",
       "squadra": "Milan",
-      "fantamedia": 6.07,
+      "fantamedia": 6.08,
       "rischio_squalifica": {
         "ammonizioni": 1,
         "prossima_soglia": 5,
@@ -199,7 +199,7 @@
       "nome": "Dimarco",
       "ruolo": "D",
       "squadra": "Inter",
-      "fantamedia": 7.07,
+      "fantamedia": 6.84,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -212,7 +212,7 @@
       "nome": "Kelly L.",
       "ruolo": "D",
       "squadra": "Juventus",
-      "fantamedia": 5.79,
+      "fantamedia": 5.73,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -225,7 +225,7 @@
       "nome": "Monterisi",
       "ruolo": "D",
       "squadra": "Frosinone",
-      "fantamedia": 5.83,
+      "fantamedia": 6.0,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -238,7 +238,7 @@
       "nome": "Pavlovic",
       "ruolo": "D",
       "squadra": "Milan",
-      "fantamedia": 6.18,
+      "fantamedia": 6.31,
       "rischio_squalifica": {
         "ammonizioni": 2,
         "prossima_soglia": 5,
@@ -251,7 +251,7 @@
       "nome": "Spence",
       "ruolo": "D",
       "squadra": "Inter",
-      "fantamedia": 6.51,
+      "fantamedia": 6.5,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -264,7 +264,7 @@
       "nome": "Spinazzola",
       "ruolo": "D",
       "squadra": "Napoli",
-      "fantamedia": 6.21,
+      "fantamedia": 6.14,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -277,7 +277,7 @@
       "nome": "Valdepenas",
       "ruolo": "D",
       "squadra": "Fiorentina",
-      "fantamedia": 5.0,
+      "fantamedia": 5.33,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -290,7 +290,7 @@
       "nome": "Falcone",
       "ruolo": "P",
       "squadra": "Lecce",
-      "fantamedia": 4.74,
+      "fantamedia": 4.49,
       "rischio_squalifica": {
         "ammonizioni": 1,
         "prossima_soglia": 5,
@@ -303,7 +303,7 @@
       "nome": "Grabara",
       "ruolo": "P",
       "squadra": "Juventus",
-      "fantamedia": 5.13,
+      "fantamedia": 5.11,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -316,7 +316,7 @@
       "nome": "Vicario",
       "ruolo": "P",
       "squadra": "Juventus",
-      "fantamedia": 5.12,
+      "fantamedia": 5.4,
       "rischio_squalifica": {
         "ammonizioni": 0,
         "prossima_soglia": 5,
@@ -327,5 +327,5 @@
     }
   ],
   "stagione": "2026/27",
-  "generato_il": "2026-09-21T18:12:57+02:00"
+  "generato_il": "2026-10-01T11:15:04+00:00"
 }
