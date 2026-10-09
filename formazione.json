@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 6,
-  "generato_il": "2026-10-08T09:00:08+00:00",
+  "generato_il": "2026-10-09T14:17:41+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 65.32,
+    "punteggio_atteso": 62.87,
     "reparti": [
       {
         "ruolo": "P",
@@ -106,16 +106,6 @@
         "ruolo": "A",
         "titolari": [
           {
-            "nome": "Scamacca",
-            "ruolo": "A",
-            "score_finale": 7.29,
-            "fantamedia": 6.98,
-            "prob_titolarita": 0.9,
-            "avversario": "Venezia",
-            "casa_trasferta": "casa",
-            "flag": null
-          },
-          {
             "nome": "Thuram",
             "ruolo": "A",
             "score_finale": 7.23,
@@ -133,6 +123,16 @@
             "prob_titolarita": 0.9,
             "avversario": "Atalanta",
             "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
+            "nome": "Scamacca",
+            "ruolo": "A",
+            "score_finale": 4.84,
+            "fantamedia": 6.98,
+            "prob_titolarita": 0.6,
+            "avversario": "Venezia",
+            "casa_trasferta": "casa",
             "flag": null
           }
         ]
@@ -160,32 +160,42 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Monterisi",
+        "nome": "Kelly L.",
         "ruolo": "D",
-        "score_finale": 3.74,
-        "fantamedia": 6.0,
-        "prob_titolarita": 0.6,
-        "avversario": "Napoli",
+        "score_finale": 4.76,
+        "fantamedia": 5.73,
+        "prob_titolarita": 0.9,
+        "avversario": "Cagliari",
         "casa_trasferta": "trasferta",
         "flag": null
       },
       {
         "nome": "De Winter",
         "ruolo": "D",
-        "score_finale": 3.27,
+        "score_finale": 3.57,
         "fantamedia": 6.08,
-        "prob_titolarita": 0.55,
+        "prob_titolarita": 0.6,
         "avversario": "Sassuolo",
         "casa_trasferta": "trasferta",
         "flag": null
       },
       {
-        "nome": "Kelly L.",
+        "nome": "Monterisi",
         "ruolo": "D",
-        "score_finale": 3.16,
-        "fantamedia": 5.73,
-        "prob_titolarita": 0.6,
-        "avversario": "Cagliari",
+        "score_finale": 3.43,
+        "fantamedia": 6.0,
+        "prob_titolarita": 0.55,
+        "avversario": "Napoli",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 1.89,
+        "fantamedia": 5.33,
+        "prob_titolarita": 0.35,
+        "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -195,36 +205,6 @@
         "score_finale": 1.0,
         "fantamedia": 6.5,
         "prob_titolarita": 0.15,
-        "avversario": "Parma",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 0.81,
-        "fantamedia": 5.33,
-        "prob_titolarita": 0.15,
-        "avversario": "Genoa",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Zielinski",
-        "ruolo": "C",
-        "score_finale": 4.18,
-        "fantamedia": 7.04,
-        "prob_titolarita": 0.6,
-        "avversario": "Parma",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Sucic P.",
-        "ruolo": "C",
-        "score_finale": 2.67,
-        "fantamedia": 6.17,
-        "prob_titolarita": 0.45,
         "avversario": "Parma",
         "casa_trasferta": "casa",
         "flag": null
@@ -240,6 +220,16 @@
         "flag": null
       },
       {
+        "nome": "Zielinski",
+        "ruolo": "C",
+        "score_finale": 1.0,
+        "fantamedia": 7.04,
+        "prob_titolarita": 0.15,
+        "avversario": "Parma",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "McTominay",
         "ruolo": "C",
         "score_finale": 0.84,
@@ -250,11 +240,21 @@
         "flag": null
       },
       {
+        "nome": "Sucic P.",
+        "ruolo": "C",
+        "score_finale": 0.81,
+        "fantamedia": 6.17,
+        "prob_titolarita": 0.15,
+        "avversario": "Parma",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Romero D.",
         "ruolo": "A",
-        "score_finale": 4.78,
+        "score_finale": 4.39,
         "fantamedia": 8.0,
-        "prob_titolarita": 0.6,
+        "prob_titolarita": 0.55,
         "avversario": "Inter",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -262,9 +262,9 @@
       {
         "nome": "Krstovic",
         "ruolo": "A",
-        "score_finale": 1.03,
+        "score_finale": 2.94,
         "fantamedia": 6.54,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.4,
         "avversario": "Venezia",
         "casa_trasferta": "casa",
         "flag": null
@@ -287,7 +287,7 @@
       },
       {
         "nome": "Zielinski",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Bowie",
@@ -295,13 +295,13 @@
       },
       {
         "nome": "Krstovic",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
       }
     ]
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 64.09,
+    "punteggio_atteso": 62.66,
     "reparti": [
       {
         "ruolo": "P",
@@ -352,12 +352,12 @@
             "flag": null
           },
           {
-            "nome": "Monterisi",
+            "nome": "Kelly L.",
             "ruolo": "D",
-            "score_finale": 3.74,
-            "fantamedia": 6.0,
-            "prob_titolarita": 0.6,
-            "avversario": "Napoli",
+            "score_finale": 4.76,
+            "fantamedia": 5.73,
+            "prob_titolarita": 0.9,
+            "avversario": "Cagliari",
             "casa_trasferta": "trasferta",
             "flag": null
           }
@@ -402,16 +402,6 @@
         "ruolo": "A",
         "titolari": [
           {
-            "nome": "Scamacca",
-            "ruolo": "A",
-            "score_finale": 7.29,
-            "fantamedia": 6.98,
-            "prob_titolarita": 0.9,
-            "avversario": "Venezia",
-            "casa_trasferta": "casa",
-            "flag": null
-          },
-          {
             "nome": "Thuram",
             "ruolo": "A",
             "score_finale": 7.23,
@@ -429,6 +419,16 @@
             "prob_titolarita": 0.9,
             "avversario": "Atalanta",
             "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
+            "nome": "Scamacca",
+            "ruolo": "A",
+            "score_finale": 4.84,
+            "fantamedia": 6.98,
+            "prob_titolarita": 0.6,
+            "avversario": "Venezia",
+            "casa_trasferta": "casa",
             "flag": null
           }
         ]
@@ -458,20 +458,30 @@
       {
         "nome": "De Winter",
         "ruolo": "D",
-        "score_finale": 3.27,
+        "score_finale": 3.57,
         "fantamedia": 6.08,
-        "prob_titolarita": 0.55,
+        "prob_titolarita": 0.6,
         "avversario": "Sassuolo",
         "casa_trasferta": "trasferta",
         "flag": null
       },
       {
-        "nome": "Kelly L.",
+        "nome": "Monterisi",
         "ruolo": "D",
-        "score_finale": 3.16,
-        "fantamedia": 5.73,
-        "prob_titolarita": 0.6,
-        "avversario": "Cagliari",
+        "score_finale": 3.43,
+        "fantamedia": 6.0,
+        "prob_titolarita": 0.55,
+        "avversario": "Napoli",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 1.89,
+        "fantamedia": 5.33,
+        "prob_titolarita": 0.35,
+        "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -486,42 +496,12 @@
         "flag": null
       },
       {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 0.81,
-        "fantamedia": 5.33,
-        "prob_titolarita": 0.15,
-        "avversario": "Genoa",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Thorstvedt",
         "ruolo": "C",
         "score_finale": 4.97,
         "fantamedia": 6.06,
         "prob_titolarita": 0.9,
         "avversario": "Milan",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Zielinski",
-        "ruolo": "C",
-        "score_finale": 4.18,
-        "fantamedia": 7.04,
-        "prob_titolarita": 0.6,
-        "avversario": "Parma",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Sucic P.",
-        "ruolo": "C",
-        "score_finale": 2.67,
-        "fantamedia": 6.17,
-        "prob_titolarita": 0.45,
-        "avversario": "Parma",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -536,6 +516,16 @@
         "flag": null
       },
       {
+        "nome": "Zielinski",
+        "ruolo": "C",
+        "score_finale": 1.0,
+        "fantamedia": 7.04,
+        "prob_titolarita": 0.15,
+        "avversario": "Parma",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "McTominay",
         "ruolo": "C",
         "score_finale": 0.84,
@@ -546,11 +536,21 @@
         "flag": null
       },
       {
+        "nome": "Sucic P.",
+        "ruolo": "C",
+        "score_finale": 0.81,
+        "fantamedia": 6.17,
+        "prob_titolarita": 0.15,
+        "avversario": "Parma",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Romero D.",
         "ruolo": "A",
-        "score_finale": 4.78,
+        "score_finale": 4.39,
         "fantamedia": 8.0,
-        "prob_titolarita": 0.6,
+        "prob_titolarita": 0.55,
         "avversario": "Inter",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -558,9 +558,9 @@
       {
         "nome": "Krstovic",
         "ruolo": "A",
-        "score_finale": 1.03,
+        "score_finale": 2.94,
         "fantamedia": 6.54,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.4,
         "avversario": "Venezia",
         "casa_trasferta": "casa",
         "flag": null
@@ -583,7 +583,7 @@
       },
       {
         "nome": "Zielinski",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Bowie",
@@ -591,10 +591,10 @@
       },
       {
         "nome": "Krstovic",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
       }
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 1.23
+  "differenza_punteggio_atteso": 0.21
 }
