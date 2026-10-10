@@ -1,7 +1,7 @@
 {
   "stagione": "2026/27",
   "giornata": 6,
-  "generato_il": "2026-10-10T10:08:35+00:00",
+  "generato_il": "2026-10-10T12:29:55+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
@@ -160,6 +160,16 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 4.87,
+        "fantamedia": 5.33,
+        "prob_titolarita": 0.9,
+        "avversario": "Genoa",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "Kelly L.",
         "ruolo": "D",
         "score_finale": 4.76,
@@ -186,16 +196,6 @@
         "fantamedia": 6.0,
         "prob_titolarita": 0.55,
         "avversario": "Napoli",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 2.97,
-        "fantamedia": 5.33,
-        "prob_titolarita": 0.55,
-        "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 65.0,
+    "punteggio_atteso": 65.1,
     "reparti": [
       {
         "ruolo": "P",
@@ -352,12 +352,12 @@
             "flag": null
           },
           {
-            "nome": "Kelly L.",
+            "nome": "Valdepenas",
             "ruolo": "D",
-            "score_finale": 4.76,
-            "fantamedia": 5.73,
+            "score_finale": 4.87,
+            "fantamedia": 5.33,
             "prob_titolarita": 0.9,
-            "avversario": "Cagliari",
+            "avversario": "Genoa",
             "casa_trasferta": "trasferta",
             "flag": null
           }
@@ -456,6 +456,16 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Kelly L.",
+        "ruolo": "D",
+        "score_finale": 4.76,
+        "fantamedia": 5.73,
+        "prob_titolarita": 0.9,
+        "avversario": "Cagliari",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "De Winter",
         "ruolo": "D",
         "score_finale": 3.57,
@@ -472,16 +482,6 @@
         "fantamedia": 6.0,
         "prob_titolarita": 0.55,
         "avversario": "Napoli",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 2.97,
-        "fantamedia": 5.33,
-        "prob_titolarita": 0.55,
-        "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 0.21
+  "differenza_punteggio_atteso": 0.11
 }
