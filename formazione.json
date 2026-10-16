@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 7,
-  "generato_il": "2026-10-15T20:15:05+00:00",
+  "generato_il": "2026-10-16T11:55:54+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 63.05,
+    "punteggio_atteso": 63.72,
     "reparti": [
       {
         "ruolo": "P",
@@ -26,6 +26,16 @@
         "ruolo": "D",
         "titolari": [
           {
+            "nome": "Dimarco",
+            "ruolo": "D",
+            "score_finale": 6.25,
+            "fantamedia": 6.77,
+            "prob_titolarita": 0.9,
+            "avversario": "Bologna",
+            "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
             "nome": "Pavlovic",
             "ruolo": "D",
             "score_finale": 5.86,
@@ -42,16 +52,6 @@
             "fantamedia": 6.1,
             "prob_titolarita": 0.9,
             "avversario": "Venezia",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
-            "nome": "Spence",
-            "ruolo": "D",
-            "score_finale": 5.57,
-            "fantamedia": 6.0,
-            "prob_titolarita": 0.9,
-            "avversario": "Bologna",
             "casa_trasferta": "trasferta",
             "flag": null
           }
@@ -170,13 +170,13 @@
         "flag": null
       },
       {
-        "nome": "Dimarco",
+        "nome": "Monterisi",
         "ruolo": "D",
-        "score_finale": 4.15,
-        "fantamedia": 6.77,
+        "score_finale": 3.54,
+        "fantamedia": 6.0,
         "prob_titolarita": 0.6,
-        "avversario": "Bologna",
-        "casa_trasferta": "trasferta",
+        "avversario": "Sassuolo",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
@@ -190,13 +190,13 @@
         "flag": null
       },
       {
-        "nome": "Monterisi",
+        "nome": "Spence",
         "ruolo": "D",
-        "score_finale": 2.36,
+        "score_finale": 0.93,
         "fantamedia": 6.0,
-        "prob_titolarita": 0.4,
-        "avversario": "Sassuolo",
-        "casa_trasferta": "casa",
+        "prob_titolarita": 0.15,
+        "avversario": "Bologna",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -220,11 +220,21 @@
         "flag": null
       },
       {
+        "nome": "Thorstvedt",
+        "ruolo": "C",
+        "score_finale": 4.74,
+        "fantamedia": 5.88,
+        "prob_titolarita": 0.9,
+        "avversario": "Frosinone",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "McKennie",
         "ruolo": "C",
-        "score_finale": 5.28,
+        "score_finale": 3.49,
         "fantamedia": 6.07,
-        "prob_titolarita": 0.9,
+        "prob_titolarita": 0.6,
         "avversario": "Lazio",
         "casa_trasferta": "casa",
         "flag": null
@@ -236,16 +246,6 @@
         "fantamedia": 6.78,
         "prob_titolarita": 0.45,
         "avversario": "Bologna",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Thorstvedt",
-        "ruolo": "C",
-        "score_finale": 2.29,
-        "fantamedia": 5.88,
-        "prob_titolarita": 0.45,
-        "avversario": "Frosinone",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 60.41,
+    "punteggio_atteso": 61.53,
     "reparti": [
       {
         "ruolo": "P",
@@ -321,6 +321,16 @@
       {
         "ruolo": "D",
         "titolari": [
+          {
+            "nome": "Dimarco",
+            "ruolo": "D",
+            "score_finale": 6.25,
+            "fantamedia": 6.77,
+            "prob_titolarita": 0.9,
+            "avversario": "Bologna",
+            "casa_trasferta": "trasferta",
+            "flag": null
+          },
           {
             "nome": "Pavlovic",
             "ruolo": "D",
@@ -342,22 +352,12 @@
             "flag": null
           },
           {
-            "nome": "Spence",
+            "nome": "Monterisi",
             "ruolo": "D",
-            "score_finale": 5.57,
+            "score_finale": 3.54,
             "fantamedia": 6.0,
-            "prob_titolarita": 0.9,
-            "avversario": "Bologna",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
-            "nome": "Valdepenas",
-            "ruolo": "D",
-            "score_finale": 3.09,
-            "fantamedia": 5.38,
             "prob_titolarita": 0.6,
-            "avversario": "Como",
+            "avversario": "Sassuolo",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -466,23 +466,23 @@
         "flag": null
       },
       {
-        "nome": "Dimarco",
+        "nome": "Valdepenas",
         "ruolo": "D",
-        "score_finale": 4.15,
-        "fantamedia": 6.77,
+        "score_finale": 3.09,
+        "fantamedia": 5.38,
         "prob_titolarita": 0.6,
-        "avversario": "Bologna",
-        "casa_trasferta": "trasferta",
+        "avversario": "Como",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
-        "nome": "Monterisi",
+        "nome": "Spence",
         "ruolo": "D",
-        "score_finale": 2.36,
+        "score_finale": 0.93,
         "fantamedia": 6.0,
-        "prob_titolarita": 0.4,
-        "avversario": "Sassuolo",
-        "casa_trasferta": "casa",
+        "prob_titolarita": 0.15,
+        "avversario": "Bologna",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -516,11 +516,21 @@
         "flag": null
       },
       {
+        "nome": "Thorstvedt",
+        "ruolo": "C",
+        "score_finale": 4.74,
+        "fantamedia": 5.88,
+        "prob_titolarita": 0.9,
+        "avversario": "Frosinone",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "McKennie",
         "ruolo": "C",
-        "score_finale": 5.28,
+        "score_finale": 3.49,
         "fantamedia": 6.07,
-        "prob_titolarita": 0.9,
+        "prob_titolarita": 0.6,
         "avversario": "Lazio",
         "casa_trasferta": "casa",
         "flag": null
@@ -532,16 +542,6 @@
         "fantamedia": 6.78,
         "prob_titolarita": 0.45,
         "avversario": "Bologna",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Thorstvedt",
-        "ruolo": "C",
-        "score_finale": 2.29,
-        "fantamedia": 5.88,
-        "prob_titolarita": 0.45,
-        "avversario": "Frosinone",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 2.64
+  "differenza_punteggio_atteso": 2.19
 }
