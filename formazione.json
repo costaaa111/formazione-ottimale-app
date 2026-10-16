@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 7,
-  "generato_il": "2026-10-16T12:14:31+00:00",
+  "generato_il": "2026-10-16T17:06:13+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 63.72,
+    "punteggio_atteso": 62.12,
     "reparti": [
       {
         "ruolo": "P",
@@ -26,16 +26,6 @@
         "ruolo": "D",
         "titolari": [
           {
-            "nome": "Dimarco",
-            "ruolo": "D",
-            "score_finale": 6.25,
-            "fantamedia": 6.77,
-            "prob_titolarita": 0.9,
-            "avversario": "Bologna",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
             "nome": "Pavlovic",
             "ruolo": "D",
             "score_finale": 5.86,
@@ -53,6 +43,16 @@
             "prob_titolarita": 0.9,
             "avversario": "Venezia",
             "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
+            "nome": "Valdepenas",
+            "ruolo": "D",
+            "score_finale": 4.64,
+            "fantamedia": 5.38,
+            "prob_titolarita": 0.9,
+            "avversario": "Como",
+            "casa_trasferta": "casa",
             "flag": null
           }
         ]
@@ -170,22 +170,22 @@
         "flag": null
       },
       {
+        "nome": "Dimarco",
+        "ruolo": "D",
+        "score_finale": 4.15,
+        "fantamedia": 6.77,
+        "prob_titolarita": 0.6,
+        "avversario": "Bologna",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "Monterisi",
         "ruolo": "D",
         "score_finale": 3.54,
         "fantamedia": 6.0,
         "prob_titolarita": 0.6,
         "avversario": "Sassuolo",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 3.09,
-        "fantamedia": 5.38,
-        "prob_titolarita": 0.6,
-        "avversario": "Como",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 61.53,
+    "punteggio_atteso": 60.54,
     "reparti": [
       {
         "ruolo": "P",
@@ -321,16 +321,6 @@
       {
         "ruolo": "D",
         "titolari": [
-          {
-            "nome": "Dimarco",
-            "ruolo": "D",
-            "score_finale": 6.25,
-            "fantamedia": 6.77,
-            "prob_titolarita": 0.9,
-            "avversario": "Bologna",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
           {
             "nome": "Pavlovic",
             "ruolo": "D",
@@ -352,13 +342,23 @@
             "flag": null
           },
           {
-            "nome": "Monterisi",
+            "nome": "Valdepenas",
             "ruolo": "D",
-            "score_finale": 3.54,
-            "fantamedia": 6.0,
-            "prob_titolarita": 0.6,
-            "avversario": "Sassuolo",
+            "score_finale": 4.64,
+            "fantamedia": 5.38,
+            "prob_titolarita": 0.9,
+            "avversario": "Como",
             "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Dimarco",
+            "ruolo": "D",
+            "score_finale": 4.15,
+            "fantamedia": 6.77,
+            "prob_titolarita": 0.6,
+            "avversario": "Bologna",
+            "casa_trasferta": "trasferta",
             "flag": null
           }
         ]
@@ -466,12 +466,12 @@
         "flag": null
       },
       {
-        "nome": "Valdepenas",
+        "nome": "Monterisi",
         "ruolo": "D",
-        "score_finale": 3.09,
-        "fantamedia": 5.38,
+        "score_finale": 3.54,
+        "fantamedia": 6.0,
         "prob_titolarita": 0.6,
-        "avversario": "Como",
+        "avversario": "Sassuolo",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 2.19
+  "differenza_punteggio_atteso": 1.58
 }
