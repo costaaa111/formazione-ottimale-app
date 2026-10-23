@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 8,
-  "generato_il": "2026-10-23T09:59:51+00:00",
+  "generato_il": "2026-10-23T12:32:55+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 59.65,
+    "punteggio_atteso": 57.41,
     "reparti": [
       {
         "ruolo": "P",
@@ -36,16 +36,6 @@
             "flag": null
           },
           {
-            "nome": "Spinazzola",
-            "ruolo": "D",
-            "score_finale": 5.13,
-            "fantamedia": 6.03,
-            "prob_titolarita": 0.9,
-            "avversario": "Roma",
-            "casa_trasferta": "casa",
-            "flag": null
-          },
-          {
             "nome": "Dimarco",
             "ruolo": "D",
             "score_finale": 3.62,
@@ -53,6 +43,16 @@
             "prob_titolarita": 0.55,
             "avversario": "Fiorentina",
             "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Monterisi",
+            "ruolo": "D",
+            "score_finale": 2.89,
+            "fantamedia": 5.9,
+            "prob_titolarita": 0.45,
+            "avversario": "Atalanta",
+            "casa_trasferta": "trasferta",
             "flag": null
           }
         ]
@@ -170,13 +170,13 @@
         "flag": null
       },
       {
-        "nome": "Monterisi",
+        "nome": "Spinazzola",
         "ruolo": "D",
-        "score_finale": 2.89,
-        "fantamedia": 5.9,
-        "prob_titolarita": 0.45,
-        "avversario": "Atalanta",
-        "casa_trasferta": "trasferta",
+        "score_finale": 2.27,
+        "fantamedia": 6.03,
+        "prob_titolarita": 0.4,
+        "avversario": "Roma",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
@@ -190,16 +190,6 @@
         "flag": null
       },
       {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 2.04,
-        "fantamedia": 5.4,
-        "prob_titolarita": 0.4,
-        "avversario": "Inter",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.91,
@@ -207,6 +197,16 @@
         "prob_titolarita": 0.15,
         "avversario": "Fiorentina",
         "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 0.76,
+        "fantamedia": 5.4,
+        "prob_titolarita": 0.15,
+        "avversario": "Inter",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 57.27,
+    "punteggio_atteso": 54.41,
     "reparti": [
       {
         "ruolo": "P",
@@ -332,16 +332,6 @@
             "flag": null
           },
           {
-            "nome": "Spinazzola",
-            "ruolo": "D",
-            "score_finale": 5.13,
-            "fantamedia": 6.03,
-            "prob_titolarita": 0.9,
-            "avversario": "Roma",
-            "casa_trasferta": "casa",
-            "flag": null
-          },
-          {
             "nome": "Dimarco",
             "ruolo": "D",
             "score_finale": 3.62,
@@ -359,6 +349,16 @@
             "prob_titolarita": 0.45,
             "avversario": "Atalanta",
             "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
+            "nome": "Spinazzola",
+            "ruolo": "D",
+            "score_finale": 2.27,
+            "fantamedia": 6.03,
+            "prob_titolarita": 0.4,
+            "avversario": "Roma",
+            "casa_trasferta": "casa",
             "flag": null
           }
         ]
@@ -476,16 +476,6 @@
         "flag": null
       },
       {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 2.04,
-        "fantamedia": 5.4,
-        "prob_titolarita": 0.4,
-        "avversario": "Inter",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.91,
@@ -493,6 +483,16 @@
         "prob_titolarita": 0.15,
         "avversario": "Fiorentina",
         "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 0.76,
+        "fantamedia": 5.4,
+        "prob_titolarita": 0.15,
+        "avversario": "Inter",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 2.38
+  "differenza_punteggio_atteso": 3.0
 }
