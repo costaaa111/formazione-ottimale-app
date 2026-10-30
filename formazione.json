@@ -1,7 +1,7 @@
 {
   "stagione": "2026/27",
   "giornata": 10,
-  "generato_il": "2026-10-30T18:31:48+00:00",
+  "generato_il": "2026-10-30T19:51:51+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
@@ -180,6 +180,16 @@
         "flag": null
       },
       {
+        "nome": "Kelly L.",
+        "ruolo": "D",
+        "score_finale": 1.93,
+        "fantamedia": 5.5,
+        "prob_titolarita": 0.35,
+        "avversario": "Napoli",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.88,
@@ -187,16 +197,6 @@
         "prob_titolarita": 0.15,
         "avversario": "Milan",
         "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Kelly L.",
-        "ruolo": "D",
-        "score_finale": 0.8,
-        "fantamedia": 5.5,
-        "prob_titolarita": 0.15,
-        "avversario": "Napoli",
-        "casa_trasferta": "casa",
         "flag": null
       },
       {
@@ -466,6 +466,16 @@
         "flag": null
       },
       {
+        "nome": "Kelly L.",
+        "ruolo": "D",
+        "score_finale": 1.93,
+        "fantamedia": 5.5,
+        "prob_titolarita": 0.35,
+        "avversario": "Napoli",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Spence",
         "ruolo": "D",
         "score_finale": 0.88,
@@ -473,16 +483,6 @@
         "prob_titolarita": 0.15,
         "avversario": "Milan",
         "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
-        "nome": "Kelly L.",
-        "ruolo": "D",
-        "score_finale": 0.8,
-        "fantamedia": 5.5,
-        "prob_titolarita": 0.15,
-        "avversario": "Napoli",
-        "casa_trasferta": "casa",
         "flag": null
       },
       {
