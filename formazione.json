@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 11,
-  "generato_il": "2026-11-05T22:38:12+00:00",
+  "generato_il": "2026-11-06T14:52:39+00:00",
   "coincidono": false,
   "migliore_assoluto": {
-    "modulo": "3-5-2",
-    "punteggio_atteso": 57.41,
+    "modulo": "3-4-3",
+    "punteggio_atteso": 58.47,
     "reparti": [
       {
         "ruolo": "P",
@@ -26,10 +26,10 @@
         "ruolo": "D",
         "titolari": [
           {
-            "nome": "Pavlovic",
+            "nome": "De Winter",
             "ruolo": "D",
-            "score_finale": 5.09,
-            "fantamedia": 6.1,
+            "score_finale": 4.68,
+            "fantamedia": 5.6,
             "prob_titolarita": 0.9,
             "avversario": "Genoa",
             "casa_trasferta": "trasferta",
@@ -60,16 +60,6 @@
       {
         "ruolo": "C",
         "titolari": [
-          {
-            "nome": "Bernardeschi",
-            "ruolo": "C",
-            "score_finale": 6.4,
-            "fantamedia": 7.41,
-            "prob_titolarita": 0.9,
-            "avversario": "Parma",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
           {
             "nome": "Taylor K.",
             "ruolo": "C",
@@ -118,9 +108,9 @@
           {
             "nome": "Krstovic",
             "ruolo": "A",
-            "score_finale": 6.76,
+            "score_finale": 9.4,
             "fantamedia": 10.1,
-            "prob_titolarita": 0.65,
+            "prob_titolarita": 0.9,
             "avversario": "Monza",
             "casa_trasferta": "trasferta",
             "flag": null
@@ -132,6 +122,16 @@
             "fantamedia": 8.3,
             "prob_titolarita": 0.9,
             "avversario": "Como",
+            "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Yeboah J.",
+            "ruolo": "A",
+            "score_finale": 5.22,
+            "fantamedia": 5.9,
+            "prob_titolarita": 0.9,
+            "avversario": "Udinese",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -160,11 +160,11 @@
         "flag": "infortunato"
       },
       {
-        "nome": "De Winter",
+        "nome": "Pavlovic",
         "ruolo": "D",
-        "score_finale": 4.68,
-        "fantamedia": 5.6,
-        "prob_titolarita": 0.9,
+        "score_finale": 3.65,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.65,
         "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -210,6 +210,16 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Bernardeschi",
+        "ruolo": "C",
+        "score_finale": 4.59,
+        "fantamedia": 7.41,
+        "prob_titolarita": 0.65,
+        "avversario": "Parma",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
         "nome": "McKennie",
         "ruolo": "C",
         "score_finale": 3.61,
@@ -240,21 +250,11 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Yeboah J.",
-        "ruolo": "A",
-        "score_finale": 3.48,
-        "fantamedia": 5.9,
-        "prob_titolarita": 0.6,
-        "avversario": "Udinese",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
         "nome": "Scamacca",
         "ruolo": "A",
-        "score_finale": 2.36,
+        "score_finale": 0.98,
         "fantamedia": 6.6,
-        "prob_titolarita": 0.35,
+        "prob_titolarita": 0.15,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -282,26 +282,26 @@
     ],
     "esclusi": [
       {
+        "nome": "Bernardeschi",
+        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+      },
+      {
         "nome": "Romero D.",
         "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Scamacca",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 35%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Sucic P.",
         "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
-      },
-      {
-        "nome": "McKennie",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
       }
     ]
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 51.42,
+    "punteggio_atteso": 54.28,
     "reparti": [
       {
         "ruolo": "P",
@@ -322,10 +322,10 @@
         "ruolo": "D",
         "titolari": [
           {
-            "nome": "Pavlovic",
+            "nome": "De Winter",
             "ruolo": "D",
-            "score_finale": 5.09,
-            "fantamedia": 6.1,
+            "score_finale": 4.68,
+            "fantamedia": 5.6,
             "prob_titolarita": 0.9,
             "avversario": "Genoa",
             "casa_trasferta": "trasferta",
@@ -367,16 +367,6 @@
         "ruolo": "C",
         "titolari": [
           {
-            "nome": "Bernardeschi",
-            "ruolo": "C",
-            "score_finale": 6.4,
-            "fantamedia": 7.41,
-            "prob_titolarita": 0.9,
-            "avversario": "Parma",
-            "casa_trasferta": "trasferta",
-            "flag": null
-          },
-          {
             "nome": "Taylor K.",
             "ruolo": "C",
             "score_finale": 5.9,
@@ -395,6 +385,16 @@
             "avversario": "Como",
             "casa_trasferta": "casa",
             "flag": null
+          },
+          {
+            "nome": "McTominay",
+            "ruolo": "C",
+            "score_finale": 5.29,
+            "fantamedia": 6.91,
+            "prob_titolarita": 0.9,
+            "avversario": "Lazio",
+            "casa_trasferta": "casa",
+            "flag": null
           }
         ]
       },
@@ -404,9 +404,9 @@
           {
             "nome": "Krstovic",
             "ruolo": "A",
-            "score_finale": 6.76,
+            "score_finale": 9.4,
             "fantamedia": 10.1,
-            "prob_titolarita": 0.65,
+            "prob_titolarita": 0.9,
             "avversario": "Monza",
             "casa_trasferta": "trasferta",
             "flag": null
@@ -424,9 +424,9 @@
           {
             "nome": "Yeboah J.",
             "ruolo": "A",
-            "score_finale": 3.48,
+            "score_finale": 5.22,
             "fantamedia": 5.9,
-            "prob_titolarita": 0.6,
+            "prob_titolarita": 0.9,
             "avversario": "Udinese",
             "casa_trasferta": "casa",
             "flag": null
@@ -456,11 +456,11 @@
         "flag": "infortunato"
       },
       {
-        "nome": "De Winter",
+        "nome": "Pavlovic",
         "ruolo": "D",
-        "score_finale": 4.68,
-        "fantamedia": 5.6,
-        "prob_titolarita": 0.9,
+        "score_finale": 3.65,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.65,
         "avversario": "Genoa",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -496,22 +496,22 @@
         "flag": "infortunato"
       },
       {
-        "nome": "McTominay",
-        "ruolo": "C",
-        "score_finale": 5.29,
-        "fantamedia": 6.91,
-        "prob_titolarita": 0.9,
-        "avversario": "Lazio",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
         "nome": "Thorstvedt",
         "ruolo": "C",
         "score_finale": 5.06,
         "fantamedia": 5.94,
         "prob_titolarita": 0.9,
         "avversario": "Roma",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
+        "nome": "Bernardeschi",
+        "ruolo": "C",
+        "score_finale": 4.59,
+        "fantamedia": 7.41,
+        "prob_titolarita": 0.65,
+        "avversario": "Parma",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -548,9 +548,9 @@
       {
         "nome": "Scamacca",
         "ruolo": "A",
-        "score_finale": 2.36,
+        "score_finale": 0.98,
         "fantamedia": 6.6,
-        "prob_titolarita": 0.35,
+        "prob_titolarita": 0.15,
         "avversario": "Monza",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -578,8 +578,8 @@
     ],
     "esclusi": [
       {
-        "nome": "McTominay",
-        "motivo": "Lazio ha concesso poco a chi gioca nel suo ruolo nelle ultime partite."
+        "nome": "Bernardeschi",
+        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
       },
       {
         "nome": "Romero D.",
@@ -587,7 +587,7 @@
       },
       {
         "nome": "Scamacca",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 35%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Sucic P.",
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 5.99
+  "differenza_punteggio_atteso": 4.19
 }
