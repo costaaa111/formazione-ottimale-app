@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 12,
-  "generato_il": "2026-11-20T12:33:40+00:00",
+  "generato_il": "2026-11-20T16:00:23+00:00",
   "coincidono": false,
   "migliore_assoluto": {
     "modulo": "3-4-3",
-    "punteggio_atteso": 59.45,
+    "punteggio_atteso": 59.06,
     "reparti": [
       {
         "ruolo": "P",
@@ -36,10 +36,10 @@
             "flag": null
           },
           {
-            "nome": "Pavlovic",
+            "nome": "De Winter",
             "ruolo": "D",
-            "score_finale": 4.96,
-            "fantamedia": 6.1,
+            "score_finale": 4.56,
+            "fantamedia": 5.6,
             "prob_titolarita": 0.9,
             "avversario": "Frosinone",
             "casa_trasferta": "casa",
@@ -170,16 +170,6 @@
         "flag": null
       },
       {
-        "nome": "De Winter",
-        "ruolo": "D",
-        "score_finale": 4.56,
-        "fantamedia": 5.6,
-        "prob_titolarita": 0.9,
-        "avversario": "Frosinone",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
         "nome": "Monterisi",
         "ruolo": "D",
         "score_finale": 3.08,
@@ -187,6 +177,16 @@
         "prob_titolarita": 0.55,
         "avversario": "Milan",
         "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
+        "nome": "Pavlovic",
+        "ruolo": "D",
+        "score_finale": 3.0,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.55,
+        "avversario": "Frosinone",
+        "casa_trasferta": "casa",
         "flag": null
       },
       {
@@ -212,9 +212,9 @@
       {
         "nome": "Bernardeschi",
         "ruolo": "C",
-        "score_finale": 4.63,
+        "score_finale": 3.45,
         "fantamedia": 7.29,
-        "prob_titolarita": 0.6,
+        "prob_titolarita": 0.45,
         "avversario": "Udinese",
         "casa_trasferta": "casa",
         "flag": null
@@ -222,9 +222,9 @@
       {
         "nome": "Zielinski",
         "ruolo": "C",
-        "score_finale": 3.48,
+        "score_finale": 1.13,
         "fantamedia": 7.16,
-        "prob_titolarita": 0.45,
+        "prob_titolarita": 0.15,
         "avversario": "Atalanta",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -250,22 +250,22 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Bowie",
+        "ruolo": "A",
+        "score_finale": 2.14,
+        "fantamedia": 5.3,
+        "prob_titolarita": 0.45,
+        "avversario": "Genoa",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Scamacca",
         "ruolo": "A",
         "score_finale": 0.79,
         "fantamedia": 6.6,
         "prob_titolarita": 0.15,
         "avversario": "Inter",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Bowie",
-        "ruolo": "A",
-        "score_finale": 0.68,
-        "fantamedia": 5.3,
-        "prob_titolarita": 0.15,
-        "avversario": "Genoa",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -283,11 +283,11 @@
     "esclusi": [
       {
         "nome": "Bernardeschi",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Zielinski",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Scamacca",
@@ -301,7 +301,7 @@
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 57.69,
+    "punteggio_atteso": 57.3,
     "reparti": [
       {
         "ruolo": "P",
@@ -332,10 +332,10 @@
             "flag": null
           },
           {
-            "nome": "Pavlovic",
+            "nome": "De Winter",
             "ruolo": "D",
-            "score_finale": 4.96,
-            "fantamedia": 6.1,
+            "score_finale": 4.56,
+            "fantamedia": 5.6,
             "prob_titolarita": 0.9,
             "avversario": "Frosinone",
             "casa_trasferta": "casa",
@@ -466,11 +466,11 @@
         "flag": null
       },
       {
-        "nome": "De Winter",
+        "nome": "Pavlovic",
         "ruolo": "D",
-        "score_finale": 4.56,
-        "fantamedia": 5.6,
-        "prob_titolarita": 0.9,
+        "score_finale": 3.0,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.55,
         "avversario": "Frosinone",
         "casa_trasferta": "casa",
         "flag": null
@@ -508,9 +508,9 @@
       {
         "nome": "Bernardeschi",
         "ruolo": "C",
-        "score_finale": 4.63,
+        "score_finale": 3.45,
         "fantamedia": 7.29,
-        "prob_titolarita": 0.6,
+        "prob_titolarita": 0.45,
         "avversario": "Udinese",
         "casa_trasferta": "casa",
         "flag": null
@@ -518,9 +518,9 @@
       {
         "nome": "Zielinski",
         "ruolo": "C",
-        "score_finale": 3.48,
+        "score_finale": 1.13,
         "fantamedia": 7.16,
-        "prob_titolarita": 0.45,
+        "prob_titolarita": 0.15,
         "avversario": "Atalanta",
         "casa_trasferta": "trasferta",
         "flag": null
@@ -546,22 +546,22 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Bowie",
+        "ruolo": "A",
+        "score_finale": 2.14,
+        "fantamedia": 5.3,
+        "prob_titolarita": 0.45,
+        "avversario": "Genoa",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
         "nome": "Scamacca",
         "ruolo": "A",
         "score_finale": 0.79,
         "fantamedia": 6.6,
         "prob_titolarita": 0.15,
         "avversario": "Inter",
-        "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Bowie",
-        "ruolo": "A",
-        "score_finale": 0.68,
-        "fantamedia": 5.3,
-        "prob_titolarita": 0.15,
-        "avversario": "Genoa",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -579,11 +579,11 @@
     "esclusi": [
       {
         "nome": "Bernardeschi",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Zielinski",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
       },
       {
         "nome": "Scamacca",
