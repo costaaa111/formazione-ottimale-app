@@ -1,11 +1,11 @@
 {
   "stagione": "2026/27",
   "giornata": 13,
-  "generato_il": "2026-11-26T17:39:40+00:00",
+  "generato_il": "2026-11-27T13:30:29+00:00",
   "coincidono": false,
   "migliore_assoluto": {
-    "modulo": "3-5-2",
-    "punteggio_atteso": 58.82,
+    "modulo": "4-5-1",
+    "punteggio_atteso": 57.92,
     "reparti": [
       {
         "ruolo": "P",
@@ -26,10 +26,10 @@
         "ruolo": "D",
         "titolari": [
           {
-            "nome": "De Winter",
+            "nome": "Pavlovic",
             "ruolo": "D",
-            "score_finale": 5.8,
-            "fantamedia": 5.8,
+            "score_finale": 6.19,
+            "fantamedia": 6.2,
             "prob_titolarita": 0.9,
             "avversario": "Cagliari",
             "casa_trasferta": "trasferta",
@@ -53,6 +53,16 @@
             "prob_titolarita": 0.55,
             "avversario": "Sassuolo",
             "casa_trasferta": "trasferta",
+            "flag": null
+          },
+          {
+            "nome": "Monterisi",
+            "ruolo": "D",
+            "score_finale": 3.03,
+            "fantamedia": 5.6,
+            "prob_titolarita": 0.55,
+            "avversario": "Parma",
+            "casa_trasferta": "casa",
             "flag": null
           }
         ]
@@ -124,16 +134,6 @@
             "avversario": "Lecce",
             "casa_trasferta": "trasferta",
             "flag": null
-          },
-          {
-            "nome": "Thuram",
-            "ruolo": "A",
-            "score_finale": 4.32,
-            "fantamedia": 8.1,
-            "prob_titolarita": 0.65,
-            "avversario": "Genoa",
-            "casa_trasferta": "casa",
-            "flag": null
           }
         ]
       }
@@ -160,23 +160,23 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Pavlovic",
+        "nome": "De Winter",
         "ruolo": "D",
-        "score_finale": 3.75,
-        "fantamedia": 6.2,
-        "prob_titolarita": 0.55,
+        "score_finale": 5.8,
+        "fantamedia": 5.8,
+        "prob_titolarita": 0.9,
         "avversario": "Cagliari",
         "casa_trasferta": "trasferta",
         "flag": null
       },
       {
-        "nome": "Monterisi",
+        "nome": "Valdepenas",
         "ruolo": "D",
-        "score_finale": 3.03,
-        "fantamedia": 5.6,
-        "prob_titolarita": 0.55,
-        "avversario": "Parma",
-        "casa_trasferta": "casa",
+        "score_finale": 2.63,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.4,
+        "avversario": "Udinese",
+        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -190,16 +190,6 @@
         "flag": null
       },
       {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 0.94,
-        "fantamedia": 6.1,
-        "prob_titolarita": 0.15,
-        "avversario": "Udinese",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Kelly L.",
         "ruolo": "D",
         "score_finale": 0.78,
@@ -210,21 +200,11 @@
         "flag": null
       },
       {
-        "nome": "Taylor K.",
-        "ruolo": "C",
-        "score_finale": 3.96,
-        "fantamedia": 7.26,
-        "prob_titolarita": 0.55,
-        "avversario": "Torino",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Zielinski",
         "ruolo": "C",
-        "score_finale": 0.96,
+        "score_finale": 2.98,
         "fantamedia": 7.16,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.45,
         "avversario": "Genoa",
         "casa_trasferta": "casa",
         "flag": null
@@ -240,12 +220,32 @@
         "flag": "infortunato"
       },
       {
+        "nome": "Taylor K.",
+        "ruolo": "C",
+        "score_finale": 0.0,
+        "fantamedia": 7.26,
+        "prob_titolarita": 0.0,
+        "avversario": "Torino",
+        "casa_trasferta": "trasferta",
+        "flag": "infortunato"
+      },
+      {
         "nome": "Yeboah J.",
         "ruolo": "A",
         "score_finale": 2.86,
         "fantamedia": 5.8,
         "prob_titolarita": 0.6,
         "avversario": "Bologna",
+        "casa_trasferta": "casa",
+        "flag": null
+      },
+      {
+        "nome": "Thuram",
+        "ruolo": "A",
+        "score_finale": 2.64,
+        "fantamedia": 8.1,
+        "prob_titolarita": 0.4,
+        "avversario": "Genoa",
         "casa_trasferta": "casa",
         "flag": null
       },
@@ -282,26 +282,26 @@
     ],
     "esclusi": [
       {
+        "nome": "Thuram",
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 40%."
+      },
+      {
         "nome": "Taylor K.",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Infortunato, non convocato."
       },
       {
         "nome": "Zielinski",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Scamacca",
         "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
-      },
-      {
-        "nome": "Spence",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       }
     ]
   },
   "quattro_tre_tre": {
     "modulo": "4-3-3",
-    "punteggio_atteso": 56.13,
+    "punteggio_atteso": 54.83,
     "reparti": [
       {
         "ruolo": "P",
@@ -322,10 +322,10 @@
         "ruolo": "D",
         "titolari": [
           {
-            "nome": "De Winter",
+            "nome": "Pavlovic",
             "ruolo": "D",
-            "score_finale": 5.8,
-            "fantamedia": 5.8,
+            "score_finale": 6.19,
+            "fantamedia": 6.2,
             "prob_titolarita": 0.9,
             "avversario": "Cagliari",
             "casa_trasferta": "trasferta",
@@ -412,22 +412,22 @@
             "flag": null
           },
           {
-            "nome": "Thuram",
-            "ruolo": "A",
-            "score_finale": 4.32,
-            "fantamedia": 8.1,
-            "prob_titolarita": 0.65,
-            "avversario": "Genoa",
-            "casa_trasferta": "casa",
-            "flag": null
-          },
-          {
             "nome": "Yeboah J.",
             "ruolo": "A",
             "score_finale": 2.86,
             "fantamedia": 5.8,
             "prob_titolarita": 0.6,
             "avversario": "Bologna",
+            "casa_trasferta": "casa",
+            "flag": null
+          },
+          {
+            "nome": "Thuram",
+            "ruolo": "A",
+            "score_finale": 2.64,
+            "fantamedia": 8.1,
+            "prob_titolarita": 0.4,
+            "avversario": "Genoa",
             "casa_trasferta": "casa",
             "flag": null
           }
@@ -456,12 +456,22 @@
         "flag": "infortunato"
       },
       {
-        "nome": "Pavlovic",
+        "nome": "De Winter",
         "ruolo": "D",
-        "score_finale": 3.75,
-        "fantamedia": 6.2,
-        "prob_titolarita": 0.55,
+        "score_finale": 5.8,
+        "fantamedia": 5.8,
+        "prob_titolarita": 0.9,
         "avversario": "Cagliari",
+        "casa_trasferta": "trasferta",
+        "flag": null
+      },
+      {
+        "nome": "Valdepenas",
+        "ruolo": "D",
+        "score_finale": 2.63,
+        "fantamedia": 6.1,
+        "prob_titolarita": 0.4,
+        "avversario": "Udinese",
         "casa_trasferta": "trasferta",
         "flag": null
       },
@@ -473,16 +483,6 @@
         "prob_titolarita": 0.45,
         "avversario": "Genoa",
         "casa_trasferta": "casa",
-        "flag": null
-      },
-      {
-        "nome": "Valdepenas",
-        "ruolo": "D",
-        "score_finale": 0.94,
-        "fantamedia": 6.1,
-        "prob_titolarita": 0.15,
-        "avversario": "Udinese",
-        "casa_trasferta": "trasferta",
         "flag": null
       },
       {
@@ -516,21 +516,11 @@
         "flag": null
       },
       {
-        "nome": "Taylor K.",
-        "ruolo": "C",
-        "score_finale": 3.96,
-        "fantamedia": 7.26,
-        "prob_titolarita": 0.55,
-        "avversario": "Torino",
-        "casa_trasferta": "trasferta",
-        "flag": null
-      },
-      {
         "nome": "Zielinski",
         "ruolo": "C",
-        "score_finale": 0.96,
+        "score_finale": 2.98,
         "fantamedia": 7.16,
-        "prob_titolarita": 0.15,
+        "prob_titolarita": 0.45,
         "avversario": "Genoa",
         "casa_trasferta": "casa",
         "flag": null
@@ -543,6 +533,16 @@
         "prob_titolarita": 0.0,
         "avversario": "Juventus",
         "casa_trasferta": "casa",
+        "flag": "infortunato"
+      },
+      {
+        "nome": "Taylor K.",
+        "ruolo": "C",
+        "score_finale": 0.0,
+        "fantamedia": 7.26,
+        "prob_titolarita": 0.0,
+        "avversario": "Torino",
+        "casa_trasferta": "trasferta",
         "flag": "infortunato"
       },
       {
@@ -579,11 +579,11 @@
     "esclusi": [
       {
         "nome": "Taylor K.",
-        "motivo": "Coperto da chi rende di più nel suo ruolo in questa giornata."
+        "motivo": "Infortunato, non convocato."
       },
       {
         "nome": "Zielinski",
-        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 15%."
+        "motivo": "Ballottaggio aperto per questa giornata: titolare solo al 45%."
       },
       {
         "nome": "Bernardeschi",
@@ -596,5 +596,5 @@
     ]
   },
   "quattro_tre_tre_motivo": null,
-  "differenza_punteggio_atteso": 2.69
+  "differenza_punteggio_atteso": 3.09
 }
